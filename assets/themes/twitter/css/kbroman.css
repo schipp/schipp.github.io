@@ -1,11 +1,11 @@
 code {
   padding: 0;
   font-size: 90%;
-  color: black;
-  background-color: white;
-  border: 0px solid white;
+  color: #f4eee4;
+  background-color: #262335;
+  border: 0px solid #262335;
 }
 
 a code {
-  color: #08c;
+  color: #fc28a8;
 }
