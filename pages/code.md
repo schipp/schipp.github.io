@@ -14,7 +14,7 @@ In Schippkus et al. ([2020](http://doi.org/10.1093/gji/ggz565)), we demonstrate 
 
 &nbsp;
 
-##### TODO: moment tensor inversion
+##### moment tensor inversion - *coming soon* -
 
 repository: [github/schipp/mti](https://github.com/schipp/mti)
 
