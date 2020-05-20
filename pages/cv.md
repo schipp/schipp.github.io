@@ -39,15 +39,15 @@ table th:nth-of-type(2) {
 |:-|-:|
 | **Schippkus, S.**, Zigone, D., Bokelmann, G., AlpArray Working Group | *2020* |
 | *Azimuthal anisotropy in the wider Vienna basin region: a proxy for the present-day stress field and deformation* | GJI, 220(3), 2056–2067 [doi:10.1093/gji/ggz565](http://doi.org/10.1093/gji/ggz565)|
-||[.pdf](/data/schippkus2020.pdf)|
+||[.pdf](/home/data/schippkus2020.pdf)|
 |||
 | **Schippkus, S.**, Hausmann, H., Duputel, Z., Bokelmann, G., AlpArray Working Group | *2019* |
 | *The Alland earthquake sequence in Eastern Austria: Shedding light on tectonic stress geometry in a key area of seismic hazard* | AJES 112(2), 182–194 [doi:10.17738/ajes.2019.0010](http://doi.org/10.17738/ajes.2019.0010)|
-||[.pdf](/data/schippkus2019.pdf)|
+||[.pdf](/home/data/schippkus2019.pdf)|
 |||
 | **Schippkus, S.**, Zigone, D., Bokelmann, G., the AlpArray Working Group. | *2018* |
 | *Ambient-noise tomography of the wider Vienna Basin region* | GJI, 215(1), 102–117 [doi:10.1093/gji/ggy259](http://doi.org/10.1093/gji/ggy259)|
-||[.pdf](/data/schippkus2018.pdf)|
+||[.pdf](/home/data/schippkus2018.pdf)|
 
 &nbsp;
 
