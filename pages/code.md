@@ -14,9 +14,17 @@ In Schippkus et al. ([2020](http://doi.org/10.1093/gji/ggz565)), we demonstrate 
 
 &nbsp;
 
-##### moment tensor inversion - *coming soon* -
+##### matched field processing
 
-repository: [github/schipp/mti](https://github.com/schipp/mti)
+repository: [github/schipp/matched_field_processing](https://github.com/schipp/matched_field_processing)
+
+Matched Field Processing is 3D-beamforming, accounting for curved wavefronts. Beampowers are computed using the Bartlett processor. The code is currently a synthetic demonstration of the methodology detailed in Umlauft & Korn ([2019](http://doi.org/10.1093/gji/ggz385)).
+
+&nbsp;
+
+##### moment tensor inversion
+
+repository: [github/schipp/moment_tensor_inversion](https://github.com/schipp/moment_tensor_inversion)
 
 Moment-tensor inversion by grid-searching the double-couple space, comparing synthetic with recorded waveforms. Waveform similarity is estimated by a combination of L1- and L2-norms. In Schippkus et al. ([2019](http://doi.org/10.17738/ajes.2019.0010)), we use this code to determine the moment tensor of the [Alland mainshock](https://www.zamg.ac.at/cms/de/geophysik/news/kraeftiges-erdbeben-im-osten-oesterreichs) near Vienna (ML 4.2 on April 25th 2016) using the [AlpArray](http://www.alparray.ethz.ch) network.
 
