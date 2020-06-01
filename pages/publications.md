@@ -17,6 +17,10 @@ table th:nth-of-type(2) {
 
 |||
 |:-|-:|
+| **Schippkus, S.**, Garden, M., Bokelmann, G. | *in review* |
+| *Characteristics of the ambient seismic field on a large-N seismic array in the Vienna basin* | Seismological Research Letters|
+||[.preprint](/home/data/schippkus2020b.pdf)|
+|||
 | **Schippkus, S.**, Zigone, D., Bokelmann, G., AlpArray Working Group | *2020* |
 | *Azimuthal anisotropy in the wider Vienna basin region: a proxy for the present-day stress field and deformation* | Geophys. J. Int., 220(3), 2056–2067 [doi:10.1093/gji/ggz565](http://doi.org/10.1093/gji/ggz565)|
 ||[.pdf](/home/data/schippkus2020.pdf)|
