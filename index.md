@@ -14,4 +14,4 @@ At higher frequencies (>1Hz), the dominant sources of the **ambient seismic fiel
 
 #### The Alps
 
-**The Alps** are the largest orogene in Europe and even though they have been studied extensively over the years, many questions remain open. To answer some of them with seismological methods, the [AlpArray](www.alparray.ethz.ch) seismic network has been installed to record continuous seismic data over several years. I have been lucky enough to be able to analyze this data to gain additional insight on the crustal structure and regional stress field in the wider Vienna basin region.
+**The Alps** are the largest orogene in Europe and even though they have been studied extensively over the years, many questions remain open. To answer some of them with seismological methods, the [AlpArray](http://www.alparray.ethz.ch) seismic network has been installed to record continuous seismic data over several years. I have been lucky enough to be able to analyze this data to gain additional insight on the crustal structure and regional stress field in the wider Vienna basin region.
