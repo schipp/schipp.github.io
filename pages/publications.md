@@ -17,7 +17,7 @@ table th:nth-of-type(2) {
 
 |||
 |:-|-:|
-| **Schippkus, S.**, Garden, M., Bokelmann, G. | *in review* |
+| **Schippkus, S.**, Garden, M., Bokelmann, G. | *in print* |
 | *Characteristics of the ambient seismic field on a large-N seismic array in the Vienna basin* | Seismological Research Letters|
 ||[.preprint](/home/data/schippkus2020b.pdf)|
 |||
