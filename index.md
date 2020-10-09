@@ -1,10 +1,22 @@
 ---
 layout: page
 title: Sven Schippkus
-site_header: research topics
+# site_header: research topics
 ---
 
-I'm a seismologist working (soon) at University of Hamburg. I specialize in the nature and applications of the ambient seismic field.
+## Contact
+
+Dr. Sven Schippkus
+University of Hamburg
+Institute of Geophysics
+Bundesstrasse 55
+DE-20146 Hamburg
+
+email: sven.schippkus@uni-hamburg.de
+
+## Research
+
+I'm a PostDoc in seismology working at University of Hamburg. I am intered in the nature of the ambient seismic field and its applications.
 
 #### The ambient seismic field
 

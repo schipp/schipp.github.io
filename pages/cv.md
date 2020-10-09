@@ -37,13 +37,13 @@ table th:nth-of-type(2) {
 
 |||
 |:-|-:|
+| **Schippkus, S.**, Garden, M., Bokelmann, G. | *2020* |
+| *Characteristics of the ambient seismic field on a large-N seismic array in the Vienna basin* | SRL 91(5), 2803–2816 [doi:10.1093/gji/ggz565](https://doi.org/10.1785/0220200153)|
+||[.preprint](/home/data/schippkus2020b.pdf)|
+|||
 | **Schippkus, S.**, Zigone, D., Bokelmann, G., AlpArray Working Group | *2020* |
 | *Azimuthal anisotropy in the wider Vienna basin region: a proxy for the present-day stress field and deformation* | GJI, 220(3), 2056–2067 [doi:10.1093/gji/ggz565](http://doi.org/10.1093/gji/ggz565)|
 ||[.pdf](/home/data/schippkus2020.pdf)|
-|||
-| **Schippkus, S.**, Hausmann, H., Duputel, Z., Bokelmann, G., AlpArray Working Group | *2019* |
-| *The Alland earthquake sequence in Eastern Austria: Shedding light on tectonic stress geometry in a key area of seismic hazard* | AJES 112(2), 182–194 [doi:10.17738/ajes.2019.0010](http://doi.org/10.17738/ajes.2019.0010)|
-||[.pdf](/home/data/schippkus2019.pdf)|
 |||
 | **Schippkus, S.**, Zigone, D., Bokelmann, G., the AlpArray Working Group. | *2018* |
 | *Ambient-noise tomography of the wider Vienna Basin region* | GJI, 215(1), 102–117 [doi:10.1093/gji/ggy259](http://doi.org/10.1093/gji/ggy259)|
@@ -63,7 +63,7 @@ for a full list including conference contributions, see [/publications](/home/pa
 |:-|-:|
 | *University of Hamburg* | *07/2020 - present* |
 | **Research Assistant**||
-|The ambient seismic field and its sources||
+|The nature of the ambient seismic field and its applications||
 |||
 | *University of Vienna* | *11/2018 - 05/2020* |
 | **Project Assistant** (*AlpArray Austria 2 (FWF 30707)*)||
