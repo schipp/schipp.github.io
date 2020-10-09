@@ -1,12 +1,14 @@
 ---
 layout: page
-title: Sven Schippkus
+title: Dr. Sven Schippkus
 # site_header: research topics
 ---
 
 |||
 |:-|:-|
 |<img src="/home/data/profile.png" width="200"/>|Dr. Sven Schippkus<br />University of Hamburg<br />Institute of Geophysics<br />Bundesstrasse 55<br />DE-20146 Hamburg<br />sven.schippkus@uni-hamburg.de|
+
+&nbsp;
 
 I'm a PostDoc in seismology working at University of Hamburg. I am interested in the nature of the ambient seismic field and its applications.
 
