@@ -7,9 +7,13 @@ title: Sven Schippkus
 ## Contact
 
 Dr. Sven Schippkus
+
 University of Hamburg
+
 Institute of Geophysics
+
 Bundesstrasse 55
+
 DE-20146 Hamburg
 
 email: sven.schippkus@uni-hamburg.de
