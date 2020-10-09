@@ -6,7 +6,7 @@ title: Sven Schippkus
 
 ## Contact
 
-![data/profile.png](image.png)
+![/home/data/profile.png](image.png)
 
 Dr. Sven Schippkus
 
