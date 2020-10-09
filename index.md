@@ -6,19 +6,9 @@ title: Sven Schippkus
 
 ## Contact
 
-![/home/data/profile.png](image.png)
-
-Dr. Sven Schippkus
-
-University of Hamburg
-
-Institute of Geophysics
-
-Bundesstrasse 55
-
-DE-20146 Hamburg
-
-email: sven.schippkus@uni-hamburg.de
+|||
+|:-|-:|
+|![profile](/home/data/profile.png)|Dr. Sven Schippkus&nbsp;University of Hamburg&nbsp;Institute of Geophysics&nbsp;Bundesstrasse 55&nbsp;DE-20146 Hamburg&nbsp;email: sven.schippkus@uni-hamburg.de|
 
 ## Research
 
