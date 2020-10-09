@@ -13,26 +13,6 @@ table th:nth-of-type(2) {
 }
 </style>
 
-#### Education
-
-|||
-|:-|-:|
-| *University of Vienna* | *04/2016 - 02/2020* |
-| **Dr. rer. nat. in Geophysics** ||
-|Thesis: Seismological contributions on the crustal structure and stress field in the wider Vienna Basin region from AlpArray||
-|||
-| *University of Kiel* | *10/2011 - 02/2015* |
-| **M.Sc. in Geophysics** ||
-|Thesis: Structure of young, oceanic lithosphere, derived from dispersion analysis||
-|||
-| *Ruhr-University Bochum* | *10/2007 - 07/2011* |
-| **B.Sc. in Geosciences** ||
-|Thesis: Automatic identification and localization of micro-seismicity in the Southeastern Aegean||
-
-&nbsp;
-
-&nbsp;
-
 #### Publications (selection)
 
 |||
@@ -52,6 +32,26 @@ table th:nth-of-type(2) {
 &nbsp;
 
 for a full list including conference contributions, see [/publications](/home/pages/publications.html)
+
+&nbsp;
+
+&nbsp;
+
+#### Education
+
+|||
+|:-|-:|
+| *University of Vienna* | *04/2016 - 02/2020* |
+| **Dr. rer. nat. in Geophysics** ||
+|Thesis: Seismological contributions on the crustal structure and stress field in the wider Vienna Basin region from AlpArray||
+|||
+| *University of Kiel* | *10/2011 - 02/2015* |
+| **M.Sc. in Geophysics** ||
+|Thesis: Structure of young, oceanic lithosphere, derived from dispersion analysis||
+|||
+| *Ruhr-University Bochum* | *10/2007 - 07/2011* |
+| **B.Sc. in Geosciences** ||
+|Thesis: Automatic identification and localization of micro-seismicity in the Southeastern Aegean||
 
 &nbsp;
 
@@ -95,7 +95,7 @@ for a full list including conference contributions, see [/publications](/home/pa
 |:-|-:|
 | **Best Geophysical Publication 2019** [1](https://imgw.univie.ac.at/news-events/detailansicht/news/sven-schippkus-won-the-prize-best-geophysical-publication/?tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Baction%5D=detail&cHash=c4c96baabad2bacbf28a6ee05365b1ba) [2](https://www.uibk.ac.at/geologie/news/aktuell/best_paper_award.html)| 2019 |
 | *of the Austrian Geophysical Society* ||
-| for the paper Schippkus et al. ([2018](http://doi.org/10.1093/gji/ggy259)). Ambient-noise tomography of the wider Vienna Basin region.||
+| for the paper "Ambient-noise tomography of the wider Vienna Basin region" ([2018](http://doi.org/10.1093/gji/ggy259)).||
 
 &nbsp;
 
@@ -105,7 +105,7 @@ for a full list including conference contributions, see [/publications](/home/pa
 
 |||
 |:-|-:|
-| **Geologische Bundesanstalt (GBA)** | 03/2020 |
+| **Geologische Bundesanstalt Österreich (GBA)** | 03/2020 |
 | *On the crustal structure and stress field in the wider Vienna Basin region: New insights from AlpArray* ||
 
 &nbsp;
