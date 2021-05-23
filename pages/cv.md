@@ -1,43 +1,41 @@
 ---
 layout: page
 title: Sven Schippkus/cv
-site_header: cv
+site_header: /cv
 ---
 
 <style>
 table th:first-of-type {
-    width: 70%;
+    width: 60%;
 }
 table th:nth-of-type(2) {
-    width: 30%;
+    width: 40%;
 }
 </style>
 
-#### Publications (selection)
+#### · Publications (selection)
 
 |||
 |:-|-:|
 | **Schippkus, S.**, Garden, M., Bokelmann, G. | *2020* |
-| *Characteristics of the ambient seismic field on a large-N seismic array in the Vienna basin* | SRL 91(5), 2803–2816 [doi:10.1785/0220200153](https://doi.org/10.1785/0220200153)|
+| [<img src="/home/data/previews/schippkus2020b_preview.png" width="50px" style="float:left; padding-right:15px">](https://doi.org/10.1785/0220200153) *Characteristics of the ambient seismic field on a large-N seismic array in the Vienna basin* | SRL 91(5), 2803–2816 [doi:10.1785/0220200153](https://doi.org/10.1785/0220200153)|
 ||[.pdf](/home/data/publications/schippkus2020b.pdf)|
 |||
 | **Schippkus, S.**, Zigone, D., Bokelmann, G., AlpArray Working Group | *2020* |
-| *Azimuthal anisotropy in the wider Vienna basin region: a proxy for the present-day stress field and deformation* | GJI, 220(3), 2056–2067 [doi:10.1093/gji/ggz565](http://doi.org/10.1093/gji/ggz565)|
+| [<img src="/home/data/previews/schippkus2020a_preview.png" width="50px" style="float:left; padding-right:15px">](http://doi.org/10.1093/gji/ggz565) *Azimuthal anisotropy in the wider Vienna basin region: a proxy for the present-day stress field and deformation* | Geophys. J. Int., 220(3), 2056–2067 [doi:10.1093/gji/ggz565](http://doi.org/10.1093/gji/ggz565)|
 ||[.pdf](/home/data/publications/schippkus2020a.pdf)|
 |||
 | **Schippkus, S.**, Zigone, D., Bokelmann, G., the AlpArray Working Group. | *2018* |
-| *Ambient-noise tomography of the wider Vienna Basin region* | GJI, 215(1), 102–117 [doi:10.1093/gji/ggy259](http://doi.org/10.1093/gji/ggy259)|
+| [<img src="/home/data/previews/schippkus2018_preview.png" width="50px" style="float:left; padding-right:15px">](http://doi.org/10.1093/gji/ggy259) *Ambient-noise tomography of the wider Vienna Basin region* | Geophys. J. Int., 215(1), 102–117 [doi:10.1093/gji/ggy259](http://doi.org/10.1093/gji/ggy259)|
 ||[.pdf](/home/data/publications/schippkus2018.pdf)|
 
 &nbsp;
 
 for a full list including conference contributions, see [/publications](/home/pages/publications.html)
 
-&nbsp;
+---
 
-&nbsp;
-
-#### Education
+#### · Education
 
 |||
 |:-|-:|
@@ -55,9 +53,9 @@ for a full list including conference contributions, see [/publications](/home/pa
 
 &nbsp;
 
-&nbsp;
+---
 
-#### Work Experience
+#### · Work Experience
 
 |||
 |:-|-:|
@@ -87,9 +85,9 @@ for a full list including conference contributions, see [/publications](/home/pa
 
 &nbsp;
 
-&nbsp;
+---
 
-#### Awards
+#### · Awards
 
 |||
 |:-|-:|
@@ -99,9 +97,9 @@ for a full list including conference contributions, see [/publications](/home/pa
 
 &nbsp;
 
-&nbsp;
+---
 
-#### Invited Talks
+#### · Invited Talks
 
 |||
 |:-|-:|
@@ -110,9 +108,9 @@ for a full list including conference contributions, see [/publications](/home/pa
 
 &nbsp;
 
-&nbsp;
+---
 
-#### Third-Party Funding
+#### · Third-Party Funding
 
 |||
 |:-|-:|
@@ -126,9 +124,9 @@ for a full list including conference contributions, see [/publications](/home/pa
 
 &nbsp;
 
-&nbsp;
+---
 
-#### Field Work
+#### · Field Work
 
 |||
 |:-|-:|
@@ -143,9 +141,9 @@ for a full list including conference contributions, see [/publications](/home/pa
 
 &nbsp;
 
-&nbsp;
+---
 
-#### Teaching Experience
+#### · Teaching Experience
 
 |||
 |:-|-:|
@@ -153,10 +151,10 @@ for a full list including conference contributions, see [/publications](/home/pa
 | Entry-level introduction into Seismology as part of the Introduction to Geophysics lecture series: Earthquakes, their mechanism, locations, impact, and predictability. Earth's structure, and how we know it. Ambient noise. New sensor technology. Extraterrestrial Seismology. ||
 |||
 | **Seminar on Seismology (M.Sc.)** | SS2021 |
-| The scientific process: students independently formulated a seismological question, reviewed literature on the topic, and designed a study to address one aspect. ||
+| The scientific process: students formulated a seismological question, reviewed literature on the topic, and designed a study to address one aspect under my supervision. ||
 |||
 | **Ambient Seismic Noise (M.Sc.)** | SS2021 |
 | Block course (half lectures/exercises) on the sources of ambient seismic noise and localisation strategies, as well as ambient noise interferometry and its applications. ||
 |||
 | **Body & Surface Wave Seismology (M.Sc.)** | WS2021 |
-| Supervised the computer practicals on: Introduction to Python, Green's Functions and Reciprocity, Magnitudes, Rayleigh and Love waves, Dispersion, Earth eigenmodes. ||
+| Supervised the computer practicals on: Introduction to Python, Green's Functions and Reciprocity, Magnitudes, Rayleigh and Love waves, Dispersion, and Earth's eigenmodes. ||
