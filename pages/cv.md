@@ -41,7 +41,7 @@ for a full list including conference contributions, see [/publications](/home/pa
 |:-|-:|
 | *University of Vienna* | *04/2016 - 02/2020* |
 | **Dr. rer. nat. in Geophysics** ||
-|Thesis: Seismological contributions on the crustal structure and stress field in the wider Vienna Basin region from AlpArray|[.pdf](/home/data/thesis.pdf)|
+|Thesis: Seismological contributions on the crustal structure and stress field in the wider Vienna Basin region from AlpArray: [.pdf](/home/data/thesis.pdf)||
 |||
 | *University of Kiel* | *10/2011 - 02/2015* |
 | **M.Sc. in Geophysics** ||
