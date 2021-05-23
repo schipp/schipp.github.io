@@ -14,7 +14,7 @@ I'm a PostDoc in seismology working at University of Hamburg. I am interested in
 
 My work is currently focused on Matched Field Processing and expanding its applicability. If you're interested, feel free to [contact](mailto:sven.schippkus@uni-hamburg.de) me.
 
-## Research Topics
+### Research Topics
 
 #### The ambient seismic field
 

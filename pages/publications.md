@@ -18,19 +18,19 @@ table th:nth-of-type(2) {
 |||
 |:-|-:|
 | **Schippkus, S.**, Garden, M., Bokelmann, G. | *2020* |
-| <img src="/home/data/schippkus2020b_preview.png" width="50px" style="float:left; padding-right:15px"> *Characteristics of the ambient seismic field on a large-N seismic array in the Vienna basin* | SRL 91(5), 2803–2816 [doi:10.1785/0220200153](https://doi.org/10.1785/0220200153)|
+| <img src="/home/data/previews/schippkus2020b_preview.png" width="50px" style="float:left; padding-right:15px"> *Characteristics of the ambient seismic field on a large-N seismic array in the Vienna basin* | SRL 91(5), 2803–2816 [doi:10.1785/0220200153](https://doi.org/10.1785/0220200153)|
 ||[.preprint](/home/data/publications/schippkus2020b.pdf)|
 |||
 | **Schippkus, S.**, Zigone, D., Bokelmann, G., AlpArray Working Group | *2020* |
-| <img src="/home/data/schippkus2020a_preview.png" width="50px" style="float:left; padding-right:15px"> *Azimuthal anisotropy in the wider Vienna basin region: a proxy for the present-day stress field and deformation* | Geophys. J. Int., 220(3), 2056–2067 [doi:10.1093/gji/ggz565](http://doi.org/10.1093/gji/ggz565)|
+| <img src="/home/data/previews/schippkus2020a_preview.png" width="50px" style="float:left; padding-right:15px"> *Azimuthal anisotropy in the wider Vienna basin region: a proxy for the present-day stress field and deformation* | Geophys. J. Int., 220(3), 2056–2067 [doi:10.1093/gji/ggz565](http://doi.org/10.1093/gji/ggz565)|
 ||[.pdf](/home/data/publications/schippkus2020a.pdf)|
 |||
 | **Schippkus, S.**, Hausmann, H., Duputel, Z., Bokelmann, G., AlpArray Working Group | *2019* |
-| <img src="/home/data/schippkus2019_preview.png" width="50px" style="float:left; padding-right:15px"> *The Alland earthquake sequence in Eastern Austria: Shedding light on tectonic stress geometry in a key area of seismic hazard* | Austrian J. Earth. Sci. 112(2), 182–194 [doi:10.17738/ajes.2019.0010](http://doi.org/10.17738/ajes.2019.0010)|
+| <img src="/home/data/previews/schippkus2019_preview.png" width="50px" style="float:left; padding-right:15px"> *The Alland earthquake sequence in Eastern Austria: Shedding light on tectonic stress geometry in a key area of seismic hazard* | Austrian J. Earth. Sci. 112(2), 182–194 [doi:10.17738/ajes.2019.0010](http://doi.org/10.17738/ajes.2019.0010)|
 ||[.pdf](/home/data/publications/schippkus2019.pdf)|
 |||
 | **Schippkus, S.**, Zigone, D., Bokelmann, G., the AlpArray Working Group. | *2018* |
-| <img src="/home/data/schippkus2018_preview.png" width="50px" style="float:left; padding-right:15px"> *Ambient-noise tomography of the wider Vienna Basin region* | Geophys. J. Int., 215(1), 102–117 [doi:10.1093/gji/ggy259](http://doi.org/10.1093/gji/ggy259)|
+| <img src="/home/data/previews/schippkus2018_preview.png" width="50px" style="float:left; padding-right:15px"> *Ambient-noise tomography of the wider Vienna Basin region* | Geophys. J. Int., 215(1), 102–117 [doi:10.1093/gji/ggy259](http://doi.org/10.1093/gji/ggy259)|
 ||[.pdf](/home/data/publications/schippkus2018.pdf)|
 |||
 | Hetényi, G., Molinari, I., Clinton, J., Bokelmann, G., Bondár, I., Crawford, W. C., et al.| *2018* |

@@ -8,14 +8,14 @@ site_header: code
 
 ##### [eikonal tomography](https://github.com/schipp/eikonal_tomography)
 
-<img src="/home/data/eikonal_preview.png" width="100px" style="float:left; padding-right:15px">
+<img src="/home/data/previews/eikonal_preview.png" width="100px" style="float:left; padding-right:15px">
 
 The Eikonal equation relates local phase velocity c to the local gradient of travel times ∇T: ∇T = 1/c. When a wave field is densely sampled, the travel-time field can be reconstructed and velocity maps can be computed directly from its gradient. This is a synthetic demonstration of this concept. Travel times in a random velocity model are computed by Fast-Marching-Method for specific station locations and the travel time field is reconstructed from these.
 
 &nbsp;
 
 ##### [azimuthal anisotropy of rayleigh waves](https://github.com/schipp/azimuthal_anisotropy)
-<img src="/home/data/aniso_preview.png" width="100px" style="float:left; padding-right:15px">
+<img src="/home/data/previews/aniso_preview.png" width="100px" style="float:left; padding-right:15px">
 
 In Schippkus et al. ([2020](http://doi.org/10.1093/gji/ggz565)), we demonstrate that residual Rayleigh-wave group velocities after inversion for isotropic velocity maps contain information about the anisotropic structure of the Earth. This code is an updated version of the code used in the paper. This version no longer relies on the specific parametrization of the isotropic inversion. It can be rapidly applied to many already-existing data.
 
@@ -23,7 +23,7 @@ In Schippkus et al. ([2020](http://doi.org/10.1093/gji/ggz565)), we demonstrate 
 
 ##### [matched field processing](https://github.com/schipp/matched_field_processing)
 
-<img src="/home/data/mfp_preview.png" width="100px" style="float:left; padding-right:15px">
+<img src="/home/data/previews/mfp_preview.png" width="100px" style="float:left; padding-right:15px">
 
 Matched Field Processing is Beamforming in the spatial domain and is thus not limited to the plane-wave assumption. Beampowers are computed using the Bartlett processor. A sample source is placed in the underground and randomly stations resolve this source. The code is a synthetic demonstration of the methodology detailed in Umlauft & Korn ([2019](http://doi.org/10.1093/gji/ggz385)).
 
@@ -33,7 +33,7 @@ Matched Field Processing is Beamforming in the spatial domain and is thus not li
 
 ##### [moment tensor inversion](https://github.com/schipp/moment_tensor_inversion)
 
-<img src="/home/data/mt_preview.png" width="100px" style="float:left; padding-right:15px">
+<img src="/home/data/previews/mt_preview.png" width="100px" style="float:left; padding-right:15px">
 
 Moment-tensor inversion by grid-searching the double-couple space, comparing synthetic with recorded waveforms. Waveform similarity is estimated by a combination of L1- and L2-norms. In Schippkus et al. ([2019](http://doi.org/10.17738/ajes.2019.0010)), we use this code to determine the moment tensor of the [Alland mainshock](https://www.zamg.ac.at/cms/de/geophysik/news/kraeftiges-erdbeben-im-osten-oesterreichs) near Vienna (ML 4.2 on April 25th 2016) using the [AlpArray](http://www.alparray.ethz.ch) network.
 
