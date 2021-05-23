@@ -18,16 +18,16 @@ table th:nth-of-type(2) {
 |||
 |:-|-:|
 | **Schippkus, S.**, Garden, M., Bokelmann, G. | *2020* |
-| *Characteristics of the ambient seismic field on a large-N seismic array in the Vienna basin* | SRL 91(5), 2803–2816 [doi:10.1093/gji/ggz565](https://doi.org/10.1785/0220200153)|
-||[.preprint](/home/data/schippkus2020b.pdf)|
+| *Characteristics of the ambient seismic field on a large-N seismic array in the Vienna basin* | SRL 91(5), 2803–2816 [doi:10.1785/0220200153](https://doi.org/10.1785/0220200153)|
+||[.pdf](/home/data/publications/schippkus2020b.pdf)|
 |||
 | **Schippkus, S.**, Zigone, D., Bokelmann, G., AlpArray Working Group | *2020* |
 | *Azimuthal anisotropy in the wider Vienna basin region: a proxy for the present-day stress field and deformation* | GJI, 220(3), 2056–2067 [doi:10.1093/gji/ggz565](http://doi.org/10.1093/gji/ggz565)|
-||[.pdf](/home/data/schippkus2020.pdf)|
+||[.pdf](/home/data/publications/schippkus2020a.pdf)|
 |||
 | **Schippkus, S.**, Zigone, D., Bokelmann, G., the AlpArray Working Group. | *2018* |
 | *Ambient-noise tomography of the wider Vienna Basin region* | GJI, 215(1), 102–117 [doi:10.1093/gji/ggy259](http://doi.org/10.1093/gji/ggy259)|
-||[.pdf](/home/data/schippkus2018.pdf)|
+||[.pdf](/home/data/publications/schippkus2018.pdf)|
 
 &nbsp;
 
@@ -43,7 +43,7 @@ for a full list including conference contributions, see [/publications](/home/pa
 |:-|-:|
 | *University of Vienna* | *04/2016 - 02/2020* |
 | **Dr. rer. nat. in Geophysics** ||
-|Thesis: Seismological contributions on the crustal structure and stress field in the wider Vienna Basin region from AlpArray||
+|Thesis: Seismological contributions on the crustal structure and stress field in the wider Vienna Basin region from AlpArray|[.pdf](/home/data/thesis.pdf)|
 |||
 | *University of Kiel* | *10/2011 - 02/2015* |
 | **M.Sc. in Geophysics** ||
@@ -93,7 +93,7 @@ for a full list including conference contributions, see [/publications](/home/pa
 
 |||
 |:-|-:|
-| **Best Geophysical Publication 2019** [1](https://imgw.univie.ac.at/news-events/detailansicht/news/sven-schippkus-won-the-prize-best-geophysical-publication/?tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Baction%5D=detail&cHash=c4c96baabad2bacbf28a6ee05365b1ba) [2](https://www.uibk.ac.at/geologie/news/aktuell/best_paper_award.html)| 2019 |
+| **Best Geophysical Publication 2019** [1](https://imgw.univie.ac.at/news-events/detailansicht/news/sven-schippkus-won-the-prize-best-geophysical-publication/?tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Baction%5D=detail&cHash=c4c96baabad2bacbf28a6ee05365b1ba) | 2019 |
 | *of the Austrian Geophysical Society* ||
 | for the paper "Ambient-noise tomography of the wider Vienna Basin region" ([2018](http://doi.org/10.1093/gji/ggy259)).||
 
@@ -147,4 +147,16 @@ for a full list including conference contributions, see [/publications](/home/pa
 
 #### Teaching Experience
 
-see [/teaching](/home/pages/teaching.html)
+|||
+|:-|-:|
+| **Introduction to Seismology (B.Sc.)** | SS2021 |
+| Entry-level introduction into Seismology as part of the Introduction to Geophysics lecture series: Earthquakes, their mechanism, locations, impact, and predictability. Earth's structure, and how we know it. Ambient noise. New sensor technology. Extraterrestrial Seismology. ||
+|||
+| **Seminar on Seismology (M.Sc.)** | SS2021 |
+| The scientific process: students independently formulated a seismological question, reviewed literature on the topic, and designed a study to address one aspect. ||
+|||
+| **Ambient Seismic Noise (M.Sc.)** | SS2021 |
+| Block course (half lectures/exercises) on the sources of ambient seismic noise and localisation strategies, as well as ambient noise interferometry and its applications. ||
+|||
+| **Body & Surface Wave Seismology (M.Sc.)** | WS2021 |
+| Supervised the computer practicals on: Introduction to Python, Green's Functions and Reciprocity, Magnitudes, Rayleigh and Love waves, Dispersion, Earth eigenmodes. ||
