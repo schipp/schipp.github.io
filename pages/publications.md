@@ -13,6 +13,22 @@ table th:nth-of-type(2) {
 }
 </style>
 
+#### · In preparation
+
+|||
+|:-|-:|
+| **Schippkus, S.**, Snieder, R., Hadziioannou, C. | *2022* |
+| <img src="/home/data/previews/schippkus2022_preview.png" width="50px" style="float:left; padding-right:15px"> *Seismic Interferometry in the presence of an isolated source* | --- |
+||preprint soon|
+
+#### · In review
+
+|||
+|:-|-:|
+| **Schippkus, S.**, Hadziioannou, C. | *2022* |
+| [<img src="/home/data/previews/mfp_new_preview.png" width="50px" style="float:left; padding-right:15px">](https://doi.org/10.31223/X5492H) *Matched Field Processing accounting for complex Earth structure:  method and review* | EarthArXiv [doi:10.1785/0220200153](https://doi.org/10.1785/0220200153)|
+||preprint [.pdf](/home/data/publications/schippkus2022.pdf)|
+
 #### · Peer-Reviewed
 
 |||

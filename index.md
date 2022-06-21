@@ -4,9 +4,9 @@ title: Dr. Sven Schippkus
 # site_header: research topics
 ---
 
-|||
-|:-|:-|
-|<img src="/home/data/profile.png" width="200"/>|Dr. Sven Schippkus<br />University of Hamburg<br />Institute of Geophysics<br />Bundesstrasse 55<br />DE-20146 Hamburg<br />sven.schippkus@uni-hamburg.de|
+|                                                 |                                                                                                                                                                |
+| :---------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <img src="/home/data/profile.png" width="200"/> | Dr. Sven Schippkus<br />University of Hamburg<br />Institute of Geophysics<br />Bundesstrasse 55<br />DE-20146 Hamburg<br />sven.schippkus (at) uni-hamburg.de |
 
 &nbsp;
 
@@ -18,9 +18,9 @@ My work is currently focused on Matched Field Processing and expanding its appli
 
 #### The ambient seismic field
 
-**The ambient seismic field** describes all contributions to the recorded wavefield that are not associated with transient sources (aka "ambient seismic noise"). In recent years, the **ambient seismic field** has become a major discipline within seismology. At low frequencies (<1Hz), ocean waves act as a continuous source and are the dominant contributor to the **ambient seismic field**. These frequencies are now routinely used to image the crustal structure of the Earth, amongst other applications. The processes are generally well understood, although open questions remain in particular around the generation of Love waves.
+**The ambient seismic field** describes all contributions to the recorded wavefield that are not associated with transient sources such as earthquakes. In recent years, the **ambient seismic field** has become a major discipline within seismology. At low frequencies (<1Hz), ocean waves act as a continuous source and are the dominant contributor to the **ambient seismic field**. These frequencies are now routinely used to image the crustal structure of the Earth, amongst other applications. The processes are generally well understood, although open questions remain in particular around the generation of Love waves.
 
-At higher frequencies (>1Hz), the dominant sources of the **ambient seismic field** are less well-known and depend significantly on the locality. To resolve those frequencies, dense seismic arrays are essential and are increasingly being deployed all around the world, hand-in-hand with the development of ambient seismc field techniques. I recently had the opportunity to analyze the **ambient seismic field** on an industrial-scale dense array (10k stations).
+At higher frequencies (>1Hz), the dominant sources of the **ambient seismic field** are less well-known and depend significantly on the locality. To resolve those frequencies, dense seismic arrays are essential and are increasingly being deployed all around the world, hand-in-hand with the development of ambient seismc field techniques. I'm currently working on an industrial-scale dense array (5k stations) that allows some fascinating insight.
 
 #### The Alps
 
