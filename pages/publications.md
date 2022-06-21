@@ -70,6 +70,12 @@ table th:nth-of-type(2) {
 
 |||
 |:-|-:|
+| **Schippkus, S.**, Hadziioannou, C. |  *2022*, Cargése |
+| *Matched Field Processing for complex Earth structure*: | **Wave Physics Summer School**|
+|||
+| **Schippkus, S.**, Hadziioannou, C. |  *2022*, Online |
+| *Matched Field Processing for complex Earth structure*: [youtube](https://www.youtube.com/watch?v=s-cumBbWfkI) | **EGU General Assembly**|
+|||
 | **Schippkus, S.**, Hadziioannou, C. |  *2021*, Online |
 | *Source locations of microseisms in the North Atlantic from Matched Field Processing using full Green's Functions*: [.pdf](/home/data/publications/dgg_2021.pdf) | **EGU General Assembly**|
 |||
