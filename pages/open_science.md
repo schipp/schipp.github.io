@@ -1,14 +1,14 @@
 ---
 layout: page
-title: Sven Schippkus/code
-site_header: /code
+title: Sven Schippkus/open_science
+site_header: /open_science
 ---
 
 #### [· numerical matched field processing](https://github.com/schipp/matched_field_processing)
 
 [<img src="/home/data/previews/mfp_new_preview.png" width="100px" style="float:left; padding-right:15px">](https://github.com/schipp/matched_field_processing)
 
-Matched Field Processing (MFP) is a technique to locate the source of a recorded wave field. It is the generalization of beamforming, allowing for curved wavefronts. In the standard approach to MFP, simple analytical Green's functions are used as synthetic wave fields that the recorded wave fields are matched against. We introduce an advancement of MFP by utilizing Green's functions computed numerically for real Earth structure as synthetic wave fields. This allows in principle to incorporate the full complexity of elastic wave propagation, and through that provide more precise estimates of the recorded wave field's origin.
+Matched Field Processing (MFP) is a technique to locate the source of a recorded wave field. In the standard approach to MFP, simple analytical Green's functions are used as synthetic wave fields that the recorded wave fields are matched against. In Schippkus et al. ([2022](http://doi.org/10.1093/gji/ggz565)), we introduce an advancement of MFP by utilizing Green's functions computed numerically for real Earth structure as synthetic wave fields. This work is [100% reproducible](https://github.com/seismology-hamburg/schippkus_hadziioannou_2022).
 
 #### [· eikonal tomography](https://github.com/schipp/eikonal_tomography)
 
