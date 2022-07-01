@@ -15,11 +15,11 @@ table th:nth-of-type(2) {
 
 #### · In preparation
 
-|                                                                                                                                                                                |               |
-| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------: |
-| <img src="/home/data/previews/schippkus2022_preview.png" width="50px" style="float:left; padding-right:15px"> **Seismic Interferometry in the presence of an isolated source** |        *2022* |
-| **Schippkus, S.**, Snieder, R., Hadziioannou, C.                                                                                                                               |           --- |
-|                                                                                                                                                                                | preprint soon |
+|                                                                                                                                                                                |                                                             |
+| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------: |
+| <img src="/home/data/previews/schippkus2022_preview.png" width="50px" style="float:left; padding-right:15px"> **Seismic Interferometry in the presence of an isolated source** |                                                      *2022* |
+| **Schippkus, S.**, Snieder, R., Hadziioannou, C.                                                                                                                               |                                                         --- |
+|                                                                                                                                                                                | preprint [.pdf](/home/data/publications/schippkus2022b.pdf) |
 
 #### · In review
 
