@@ -13,7 +13,7 @@ table th:nth-of-type(2) {
 }
 </style>
 
-#### · In preparation
+#### · In review
 
 |                                                                                                                                                                                |                                                                   |
 | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------: |
@@ -21,18 +21,14 @@ table th:nth-of-type(2) {
 | **Schippkus, S.**, Snieder, R., Hadziioannou, C.                                                                                                                               | EarthArXiv [doi:10.31223/X57W76](https://doi.org/10.31223/X57W76) |
 |                                                                                                                                                                                |       preprint [.pdf](/home/data/publications/schippkus2022b.pdf) |
 
-#### · In review
-
-|                                                                                                                                                                                                                                    |                                                                                |
-| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -----------------------------------------------------------------------------: |
-| [<img src="/home/data/previews/mfp_new_preview.png" width="50px" style="float:left; padding-right:15px">](https://doi.org/10.31223/X5492H) **Matched Field Processing accounting for complex Earth structure:  method and review** |                                                                         *2022* |
-| **Schippkus, S.**, Hadziioannou, C.                                                                                                                                                                                                | Geophys. J. Int. [doi:10.1093/gji/ggac240](http://doi.org/10.1093/gji/ggac240) |
-|                                                                                                                                                                                                                                    |                     preprint [.pdf](/home/data/publications/schippkus2022.pdf) |
-
 #### · Peer-Reviewed
 
 |                                                                                                                                                                                                                                                                                           |                                                                                                               |
 | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------: |
+| [<img src="/home/data/previews/mfp_new_preview.png" width="50px" style="float:left; padding-right:15px">](https://doi.org/10.31223/X5492H) **Matched Field Processing accounting for complex Earth structure:  method and review**                                                        |                                                                                                        *2022* |
+| **Schippkus, S.**, Hadziioannou, C.                                                                                                                                                                                                                                                       |                                Geophys. J. Int. [doi:10.1093/gji/ggac240](http://doi.org/10.1093/gji/ggac240) |
+|                                                                                                                                                                                                                                                                                           |                                                    preprint [.pdf](/home/data/publications/schippkus2022.pdf) |
+|                                                                                                                                                                                                                                                                                           |                                                                                                               |
 | [<img src="/home/data/previews/schippkus2020b_preview.png" width="50px" style="float:left; padding-right:15px">](https://doi.org/10.1785/0220200153) **Characteristics of the ambient seismic field on a large-N seismic array in the Vienna basin**                                      |                                                                                                        *2020* |
 | **Schippkus, S.**, Garden, M., Bokelmann, G.                                                                                                                                                                                                                                              |                             SRL 91(5), 2803–2816 [doi:10.1785/0220200153](https://doi.org/10.1785/0220200153) |
 |                                                                                                                                                                                                                                                                                           |                                                            [.pdf](/home/data/publications/schippkus2020b.pdf) |
