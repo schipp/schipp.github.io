@@ -1,0 +1,148 @@
+body {
+    background-color: #191622;
+    color: #E1E1E6;
+    font-family: verdana;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+a:link {
+    color: #E1E1E6;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #E1E1E6;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #E1E1E6;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #E1E1E6;
+    text-decoration: underline;
+}
+
+div.grid-container {
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    /* background-color: #2196F3; */
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+div.grid-item {
+    background-color: #191622;
+    /* border: 0px solid #191622; */
+    padding: 5px;
+    font-size: 15px;
+    text-align: center;
+    height: 360px;
+}
+
+div.grid-item2 {
+    background-color: #191622;
+    /* border: 0px solid #191622; */
+    padding: 5px;
+    font-size: 15px;
+    text-align: center;
+    height: 300px;
+}
+
+div.text {
+    height: 80px;
+    font-weight: bold;
+}
+
+div.trim {
+    max-height: 240px;
+    max-width: 250px;
+    align-items: center;
+    overflow: hidden;
+}
+
+div.title {
+    text-align: justify;
+}
+
+/* Main container */
+div.overlay-image {
+    position: relative;
+    width: 100%;
+}
+
+/* Original image */
+div.overlay-image .image {
+    display: block;
+    max-height: 240px;
+    max-width: 240px;
+    align-items: center;
+    overflow: hidden;
+}
+
+div.overlay-image h3 {
+    background-color: #E1E1E6;
+    color: #E96379;
+    position: absolute;
+    top: -15%;
+    left: -10%;
+    border: solid #E96379;
+    rotate: -30deg;
+    font-size: 18pt;
+    padding: 5px;
+}
+
+/* Original text overlay */
+div.overlay-image .text {
+    color: #E1E1E6;
+    font-weight: bold;
+    line-height: 1.5em;
+    text-shadow: 1px 1px 2px #191622;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+
+/* Original text overlay */
+div.overlay-image .bottomtext {
+    color: #E1E1E6;
+    /* font-weight: bold; */
+    line-height: 1.5em;
+    text-shadow: 1px 1px 2px #191622;
+    text-align: center;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+
+div.overlay-image .headertext {
+    color: #E1E1E6;
+    /* font-weight: bold; */
+    line-height: 1.5em;
+    text-shadow: 1px 1px 2px #191622;
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
