@@ -146,3 +146,8 @@ div.overlay-image .headertext {
     transform: translate(-50%, -50%);
     width: 90%;
 }
+
+img {
+    border: 2px solid #191622;
+    border-radius: 10%;
+}
