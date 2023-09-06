@@ -1,6 +1,6 @@
 body {
-    background-color: #191622;
-    color: #E1E1E6;
+    background-color: #191724;
+    color: #e0def4;
     font-family: verdana;
 }
 
@@ -17,37 +17,35 @@ p {
 }
 
 a:link {
-    color: #E1E1E6;
+    color: #e0def4;
     text-decoration: none;
 }
 
 a:visited {
-    color: #E1E1E6;
+    color: #e0def4;
     text-decoration: none;
 }
 
 a:hover {
-    color: #E1E1E6;
+    color: #e0def4;
     text-decoration: underline;
 }
 
 a:active {
-    color: #E1E1E6;
+    color: #e0def4;
     text-decoration: underline;
 }
 
 div.grid-container {
     display: grid;
     grid-template-columns: 250px 250px 250px;
-    /* background-color: #2196F3; */
     padding: 5px;
     align-items: center;
     justify-content: center;
 }
 
 div.grid-item {
-    background-color: #191622;
-    /* border: 0px solid #191622; */
+    background-color: #191724;
     padding: 5px;
     font-size: 15px;
     text-align: center;
@@ -55,8 +53,7 @@ div.grid-item {
 }
 
 div.grid-item2 {
-    background-color: #191622;
-    /* border: 0px solid #191622; */
+    background-color: #191724;
     padding: 5px;
     font-size: 15px;
     text-align: center;
@@ -95,23 +92,24 @@ div.overlay-image .image {
 }
 
 div.overlay-image h3 {
-    background-color: #E1E1E6;
-    color: #E96379;
+    background-color: #191724;
+    color: #f6c177;
     position: absolute;
-    top: -15%;
-    left: -10%;
-    border: solid #E96379;
+    top: -20%;
+    left: -8%;
+    border: solid #f6c177;
     rotate: -30deg;
-    font-size: 18pt;
+    font-size: 22pt;
     padding: 5px;
+    box-shadow: 0px 0px 30px 10px #f6c177;
 }
 
 /* Original text overlay */
 div.overlay-image .text {
-    color: #E1E1E6;
+    color: #e0def4;
     font-weight: bold;
     line-height: 1.5em;
-    text-shadow: 1px 1px 2px #191622;
+    text-shadow: 1px 1px 2px #191724;
     text-align: center;
     position: absolute;
     top: 50%;
@@ -122,10 +120,10 @@ div.overlay-image .text {
 
 /* Original text overlay */
 div.overlay-image .bottomtext {
-    color: #E1E1E6;
+    color: #e0def4;
     /* font-weight: bold; */
     line-height: 1.5em;
-    text-shadow: 1px 1px 2px #191622;
+    text-shadow: 1px 1px 2px #191724;
     text-align: center;
     position: absolute;
     top: 90%;
@@ -135,10 +133,10 @@ div.overlay-image .bottomtext {
 }
 
 div.overlay-image .headertext {
-    color: #E1E1E6;
+    color: #e0def4;
     /* font-weight: bold; */
     line-height: 1.5em;
-    text-shadow: 1px 1px 2px #191622;
+    text-shadow: 1px 1px 2px #191724;
     text-align: center;
     position: absolute;
     top: 10%;
@@ -148,6 +146,6 @@ div.overlay-image .headertext {
 }
 
 img {
-    border: 2px solid #191622;
+    border: 2px solid #191724;
     border-radius: 10%;
 }
