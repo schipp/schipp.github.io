@@ -1,0 +1,111 @@
+{
+    "publications": {
+        "1": {
+            "title": "Continuous isolated noise sources induce repeating waves in the coda of ambient noise correlations",
+            "journal": "in review",
+            "year": "",
+            "doi": "doi:10.31223/X52M20",
+            "url": "https://doi.org/10.31223/X52M20",
+            "preview_img": "img/schippkus2023_preview.png",
+            "tag": "new"
+        },
+        "2": {
+            "title": "Seismic Interferometry in the presence of an isolated source",
+            "journal": "Seismica",
+            "year": "2022",
+            "doi": "doi:10.26443/seismica.v1i1.195",
+            "url": "https://doi.org/10.26443/seismica.v1i1.195",
+            "preview_img": "img/schippkus2022b_preview.png",
+            "tag": ""
+        },
+        "3": {
+            "title": "Matched Field Processing accounting for complex Earth structure: method",
+            "journal": "GJI",
+            "year": "2022",
+            "doi": "doi:10.1093/gji/ggac240",
+            "url": "https://doi.org/10.1093/gji/ggac240",
+            "preview_img": "img/schippkus2022a_preview.png",
+            "tag": ""
+        },
+        "4": {
+            "title": "Characteristics of the ambient seismic field on a large-N seismic array in the Vienna basin",
+            "journal": "SRL",
+            "year": "2020",
+            "doi": "doi:10.1785/0220200153",
+            "url": "https://doi.org/10.1785/0220200153",
+            "preview_img": "img/schippkus2020b_preview.png",
+            "tag": ""
+        },
+        "5": {
+            "title": "Azimuthal anisotropy in the wider Vienna basin region: a proxy for the present-day stress field and deformation",
+            "journal": "GJI",
+            "year": "2020",
+            "doi": "doi:10.1093/gji/ggz565",
+            "url": "https://doi.org/10.1093/gji/ggz565",
+            "preview_img": "img/schippkus2020a_preview.png",
+            "tag": ""
+        },
+        "6": {
+            "title": "The Alland earthquake sequence in Eastern Austria: Shedding light on tectonic stress geometry in a key area of seismic hazard",
+            "journal": "Austrian J. Earth. Sci.",
+            "year": "2019",
+            "doi": "doi:10.17738/ajes.2019.0010",
+            "url": "https://doi.org/10.17738/ajes.2019.0010",
+            "preview_img": "img/schippkus2019_preview.png",
+            "tag": ""
+        },
+        "7": {
+            "title": "Ambient noise tomography of the wider Vienna Basin region",
+            "journal": "GJI",
+            "year": "2018",
+            "doi": "doi:10.1093/gji/ggy259",
+            "url": "https://doi.org/10.1093/gji/ggy259",
+            "preview_img": "img/schippkus2018_preview.png",
+            "tag": ""
+        }
+    },
+    "repositories": {
+        "1": {
+            "title": "Fast beamforming in Python",
+            "url": "https://github.com/schipp/fast_beamforming",
+            "preview_img": "img/fast_beamforming.png",
+            "tag": "new"
+        },
+        "2": {
+            "title": "Repeating waves in the coda of ambient noise correlations",
+            "url": "https://github.com/schipp/repeating_direct_waves",
+            "preview_img": "img/schippkus2023_preview.png",
+            "tag": "new"
+        },
+        "3": {
+            "title": "Numerical Matched Field Processing",
+            "url": "https://github.com/schipp/matched_field_processing",
+            "preview_img": "img/schippkus2022a_preview.png",
+            "tag": ""
+        },
+        "4": {
+            "title": "Eikonal Tomography",
+            "url": "https://github.com/schipp/eikonal_tomography",
+            "preview_img": "img/eikonal_preview.png",
+            "tag": ""
+        },
+        "5": {
+            "title": "Azimuthal anisotropy of surface waves",
+            "url": "https://github.com/schipp/azimuthal_anisotropy",
+            "preview_img": "img/aniso_preview.png",
+            "tag": ""
+        },
+        "6": {
+            "title": "Classical Matched Field Processing",
+            "url": "https://github.com/schipp/matched_field_processing_simple",
+            "preview_img": "img/mfp_preview.png",
+            "tag": ""
+        },
+        "7": {
+            "title": "Moment Tensor Inversion",
+            "url": "https://github.com/schipp/moment_tensor_inversion",
+            "preview_img": "img/mt_preview.png",
+            "tag": ""
+        }
+    }
+}
