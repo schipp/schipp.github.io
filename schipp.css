@@ -38,7 +38,7 @@ a:active {
 
 div.grid-container {
     display: grid;
-    grid-template-columns: 250px 250px 250px;
+    grid-template-columns: 225px 225px 225px;
     padding: 5px;
     align-items: center;
     justify-content: center;
@@ -49,7 +49,7 @@ div.grid-item {
     padding: 5px;
     font-size: 15px;
     text-align: center;
-    height: 360px;
+    height: 300px;
 }
 
 div.grid-item2 {
@@ -61,16 +61,19 @@ div.grid-item2 {
 }
 
 div.text {
-    height: 80px;
+    /* height: 80px; */
     font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 90px;
 }
 
-div.trim {
-    max-height: 240px;
-    max-width: 250px;
+/* div.trim {
+    max-height: 200px;
+    max-width: 200px;
     align-items: center;
-    overflow: hidden;
-}
+    overflow: show;
+} */
 
 div.title {
     text-align: justify;
@@ -85,8 +88,8 @@ div.overlay-image {
 /* Original image */
 div.overlay-image .image {
     display: block;
-    max-height: 240px;
-    max-width: 240px;
+    max-height: 210px;
+    max-width: 210px;
     align-items: center;
     overflow: hidden;
 }
@@ -102,6 +105,18 @@ div.overlay-image h3 {
     font-size: 22pt;
     padding: 5px;
     box-shadow: 0px 0px 30px 10px #f6c177;
+}
+
+div.overlay-image journal {
+    /* color: #e0def4; */
+    color: #191724;
+    position: absolute;
+    bottom: 7%;
+    right: 7%;
+    font-weight: bold;
+    text-align: right;
+    text-shadow: -1px -1px 0 #e0def4, 1px -1px 0 #e0def4, -1px 1px 0 #e0def4, 1px 1px 0 #e0def4;
+    max-width: 180px;
 }
 
 /* Original text overlay */
