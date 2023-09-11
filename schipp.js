@@ -28,7 +28,7 @@ function generate_grid(papers, grid_type) {
         //  journal + year overlay ontop of image
         if (grid_type == "papers") {
             var journal = document.createElement("journal");
-            journal.innerText = papers[id]["journal"] + "," + papers[id]["year"];
+            journal.innerText = papers[id]["journal"] + ", " + papers[id]["year"];
             overlay_image.appendChild(journal);
         }
 
