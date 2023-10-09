@@ -2,10 +2,10 @@
     "publications": {
         "1": {
             "title": "Continuous isolated noise sources induce repeating waves in the coda of ambient noise correlations",
-            "journal": "in press",
+            "journal": "Seismica",
             "year": "2023",
-            "doi": "doi:10.31223/X52M20",
-            "url": "https://doi.org/10.31223/X52M20",
+            "doi": "doi:10.26443/seismica.v2i2.499",
+            "url": "https://doi.org/10.26443/seismica.v2i2.499",
             "preview_img": "img/schippkus2023_preview.png",
             "tag": "new"
         },
@@ -75,7 +75,7 @@
             "title": "Repeating waves in the coda of ambient noise correlations",
             "url": "https://github.com/schipp/repeating_direct_waves",
             "preview_img": "img/schippkus2023_preview.png",
-            "tag": "new"
+            "tag": ""
         },
         "3": {
             "title": "Numerical Matched Field Processing",
