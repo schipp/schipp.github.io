@@ -96,15 +96,23 @@ div.overlay-image .image {
 
 div.overlay-image h3 {
     background-color: #191724;
-    color: #f6c177;
     position: absolute;
     top: -20%;
     left: -8%;
-    border: solid #f6c177;
+    border: solid;
     rotate: -30deg;
     font-size: 22pt;
     padding: 5px;
-    box-shadow: 0px 0px 30px 10px #f6c177;
+    box-shadow: 0px 0px 30px 10px;
+    animation: anim_color 5s linear infinite;
+}
+
+@keyframes anim_color {
+    0%{color:#f6c177 }
+    25%{color:#ebbcba}
+    50%{color:#9ccfd8}
+    75%{color:#ebbcba}
+    100%{color:#f6c177 }
 }
 
 div.overlay-image journal {
