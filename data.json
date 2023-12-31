@@ -1,15 +1,24 @@
 {
     "publications": {
         "1": {
+            "title": "Stacking of distributed dynamic strain reveals link between seismic velocity changes and the 2020 unrest in Reykjanes",
+            "journal": "pre-print",
+            "year": "",
+            "doi": "doi:10.22541/essoar.170144014.46955485/v1",
+            "url": "https://doi.org/10.22541/essoar.170144014.46955485/v1",
+            "preview_img": "img/maass2024_preview.png",
+            "tag": "new"
+        },
+        "2": {
             "title": "Continuous isolated noise sources induce repeating waves in the coda of ambient noise correlations",
             "journal": "Seismica",
             "year": "2023",
             "doi": "doi:10.26443/seismica.v2i2.499",
             "url": "https://doi.org/10.26443/seismica.v2i2.499",
             "preview_img": "img/schippkus2023_preview.png",
-            "tag": "new"
+            "tag": ""
         },
-        "2": {
+        "3": {
             "title": "Seismic Interferometry in the presence of an isolated source",
             "journal": "Seismica",
             "year": "2022",
@@ -18,7 +27,7 @@
             "preview_img": "img/schippkus2022b_preview.png",
             "tag": ""
         },
-        "3": {
+        "4": {
             "title": "Matched Field Processing accounting for complex Earth structure: method and review",
             "journal": "GJI",
             "year": "2022",
@@ -27,7 +36,7 @@
             "preview_img": "img/schippkus2022a_preview.png",
             "tag": ""
         },
-        "4": {
+        "5": {
             "title": "Characteristics of the ambient seismic field on a large-N seismic array in the Vienna basin",
             "journal": "SRL",
             "year": "2020",
@@ -36,7 +45,7 @@
             "preview_img": "img/schippkus2020b_preview.png",
             "tag": ""
         },
-        "5": {
+        "6": {
             "title": "Azimuthal anisotropy in the wider Vienna basin region: a proxy for the present-day stress field and deformation",
             "journal": "GJI",
             "year": "2020",
@@ -45,7 +54,7 @@
             "preview_img": "img/schippkus2020a_preview.png",
             "tag": ""
         },
-        "6": {
+        "7": {
             "title": "The Alland earthquake sequence in Eastern Austria: Shedding light on tectonic stress geometry in a key area of seismic hazard",
             "journal": "Austrian J. Earth. Sci.",
             "year": "2019",
@@ -54,7 +63,7 @@
             "preview_img": "img/schippkus2019_preview.png",
             "tag": ""
         },
-        "7": {
+        "8": {
             "title": "Ambient noise tomography of the wider Vienna Basin region",
             "journal": "GJI",
             "year": "2018",
@@ -69,7 +78,7 @@
             "title": "Fast beamforming in Python",
             "url": "https://github.com/schipp/fast_beamforming",
             "preview_img": "img/fast_beamforming.png",
-            "tag": "new"
+            "tag": ""
         },
         "2": {
             "title": "Repeating waves in the coda of ambient noise correlations",
