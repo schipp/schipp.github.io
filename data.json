@@ -1,12 +1,12 @@
 {
     "publications": {
         "1": {
-            "title": "coming very soon...",
+            "title": "coming soon...",
             "journal": "pre-print",
             "year": "",
-            "doi": "",
+            "doi": "doi:.../.../...",
             "url": "#",
-            "preview_img": "img/soon.png",
+            "preview_img": "img/svennevig2024_preview.png",
             "tag": "new"
         },
         "2": {
