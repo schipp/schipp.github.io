@@ -1,14 +1,5 @@
 {
     "publications": {
-        "1": {
-            "title": "An Extraordinary Tsunamigenic Rockslide Into a Greenland Fjord Rang The Earth For 9 Days",
-            "journal": "pre-print",
-            "year": "",
-            "doi": "doi:10.5281/zenodo.10449633",
-            "url": "https://doi.org/10.5281/zenodo.10449633",
-            "preview_img": "img/svennevig2024_preview.png",
-            "tag": "new"
-        },
         "2": {
             "title": "Stacking of distributed dynamic strain reveals link between seismic velocity changes and the 2020 unrest in Reykjanes",
             "journal": "pre-print",
@@ -84,42 +75,48 @@
     },
     "repositories": {
         "1": {
+            "title": "An Extraordinary Tsunamigenic Rockslide Into a Greenland Fjord Rang The Earth For 9 Days",
+            "url": "https://github.com/ROBelgium/VLPGreenland",
+            "preview_img": "img/svennevig2024_preview.png",
+            "tag": "new"
+        },
+        "2": {
             "title": "Fast beamforming in Python",
             "url": "https://github.com/schipp/fast_beamforming",
             "preview_img": "img/fast_beamforming.png",
             "tag": ""
         },
-        "2": {
+        "3": {
             "title": "Repeating waves in the coda of ambient noise correlations",
             "url": "https://github.com/schipp/repeating_direct_waves",
             "preview_img": "img/schippkus2023_preview.png",
             "tag": ""
         },
-        "3": {
+        "4": {
             "title": "Numerical Matched Field Processing",
             "url": "https://github.com/schipp/matched_field_processing",
             "preview_img": "img/schippkus2022a_preview.png",
             "tag": ""
         },
-        "4": {
+        "5": {
             "title": "Eikonal Tomography",
             "url": "https://github.com/schipp/eikonal_tomography",
             "preview_img": "img/eikonal_preview.png",
             "tag": ""
         },
-        "5": {
+        "6": {
             "title": "Azimuthal anisotropy of surface waves",
             "url": "https://github.com/schipp/azimuthal_anisotropy",
             "preview_img": "img/aniso_preview.png",
             "tag": ""
         },
-        "6": {
+        "7": {
             "title": "Classical Matched Field Processing",
             "url": "https://github.com/schipp/matched_field_processing_simple",
             "preview_img": "img/mfp_preview.png",
             "tag": ""
         },
-        "7": {
+        "8": {
             "title": "Moment Tensor Inversion",
             "url": "https://github.com/schipp/moment_tensor_inversion",
             "preview_img": "img/mt_preview.png",
