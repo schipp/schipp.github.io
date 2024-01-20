@@ -4,46 +4,32 @@ body {
     font-family: verdana;
 }
 
-h1 {
+/* Headings and paragraphs centralized styling */
+h1, h2, p {
     text-align: center;
 }
 
-h2 {
-    text-align: center;
-}
-
-p {
-    text-align: center;
-}
-
-a:link {
+/* Anchor tag styles */
+a:link, a:visited {
     color: #e0def4;
     text-decoration: none;
 }
 
-a:visited {
-    color: #e0def4;
-    text-decoration: none;
-}
-
-a:hover {
+a:hover, a:active {
     color: #e0def4;
     text-decoration: underline;
 }
 
-a:active {
-    color: #e0def4;
-    text-decoration: underline;
-}
-
+/* Grid container styles */
 div.grid-container {
     display: grid;
-    grid-template-columns: 225px 225px 225px;
+    grid-template-columns: repeat(3, 225px); /* Simplified column definition */
     padding: 5px;
     align-items: center;
     justify-content: center;
 }
 
+/* Grid item styles */
 div.grid-item {
     background-color: #191724;
     padding: 5px;
@@ -52,40 +38,26 @@ div.grid-item {
     height: 300px;
 }
 
-div.grid-item2 {
-    background-color: #191724;
-    padding: 5px;
-    font-size: 15px;
-    text-align: center;
-    height: 300px;
-}
-
+/* Text styles */
 div.text {
-    /* height: 80px; */
     font-weight: bold;
     overflow: hidden;
     text-overflow: ellipsis;
     max-height: 90px;
 }
 
-/* div.trim {
-    max-height: 200px;
-    max-width: 200px;
-    align-items: center;
-    overflow: show;
-} */
-
+/* Title styles */
 div.title {
     text-align: justify;
 }
 
-/* Main container */
+/* Overlay image container styles */
 div.overlay-image {
     position: relative;
     width: 100%;
 }
 
-/* Original image */
+/* Original image styles */
 div.overlay-image .image {
     display: block;
     max-height: 210px;
@@ -94,29 +66,29 @@ div.overlay-image .image {
     overflow: hidden;
 }
 
+/* H3 element in overlay image */
 div.overlay-image h3 {
     background-color: #191724;
     position: absolute;
     top: -20%;
     left: -8%;
     border: solid;
-    rotate: -30deg;
+    transform: rotate(-30deg);
     font-size: 22pt;
     padding: 5px;
     box-shadow: 0px 0px 30px 10px;
     animation: anim_color 5s linear infinite;
 }
 
+/* Keyframes for animation */
 @keyframes anim_color {
-    0%{color:#f6c177 }
-    25%{color:#ebbcba}
-    50%{color:#9ccfd8}
-    75%{color:#ebbcba}
-    100%{color:#f6c177 }
+    0%, 100% { color: #f6c177; }
+    25%, 75% { color: #ebbcba; }
+    50% { color: #9ccfd8; }
 }
 
+/* Journal element in overlay image */
 div.overlay-image journal {
-    /* color: #e0def4; */
     color: #191724;
     position: absolute;
     bottom: 7%;
@@ -127,47 +99,7 @@ div.overlay-image journal {
     max-width: 180px;
 }
 
-/* Original text overlay */
-div.overlay-image .text {
-    color: #e0def4;
-    font-weight: bold;
-    line-height: 1.5em;
-    text-shadow: 1px 1px 2px #191724;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-}
-
-/* Original text overlay */
-div.overlay-image .bottomtext {
-    color: #e0def4;
-    /* font-weight: bold; */
-    line-height: 1.5em;
-    text-shadow: 1px 1px 2px #191724;
-    text-align: center;
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-}
-
-div.overlay-image .headertext {
-    color: #e0def4;
-    /* font-weight: bold; */
-    line-height: 1.5em;
-    text-shadow: 1px 1px 2px #191724;
-    text-align: center;
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-}
-
+/* Image styles */
 img {
     border: 2px solid #191724;
     border-radius: 10%;
