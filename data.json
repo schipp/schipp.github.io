@@ -1,13 +1,22 @@
 {
     "publications": {
+        "1": {
+            "title": "A rockslide-generated tsunami in a Greenland fjord rang Earth for 9 days",
+            "journal": "Science",
+            "year": "2024",
+            "doi": "doi:10.1126/science.adm9247",
+            "url": "https://doi.org/10.1126/science.adm9247",
+            "preview_img": "img/svennevig2024_preview.png",
+            "tag": "new"
+        },
         "2": {
             "title": "Stacking of distributed dynamic strain reveals link between seismic velocity changes and the 2020 unrest in Reykjanes",
-            "journal": "pre-print",
-            "year": "",
-            "doi": "doi:10.22541/essoar.170144014.46955485/v1",
-            "url": "https://doi.org/10.22541/essoar.170144014.46955485/v1",
+            "journal": "JGR Solid Earth",
+            "year": "2024",
+            "doi": "doi:10.1029/2023JB028320",
+            "url": "https://doi.org/10.1029/2023JB028320",
             "preview_img": "img/maass2024_preview.png",
-            "tag": "new"
+            "tag": ""
         },
         "3": {
             "title": "Continuous isolated noise sources induce repeating waves in the coda of ambient noise correlations",
@@ -75,7 +84,7 @@
     },
     "repositories": {
         "1": {
-            "title": "An Extraordinary Tsunamigenic Rockslide Into a Greenland Fjord Rang The Earth For 9 Days",
+            "title": "A rockslide-generated tsunami in a Greenland fjord rang Earth for 9 days",
             "url": "https://github.com/ROBelgium/VLPGreenland",
             "preview_img": "img/svennevig2024_preview.png",
             "tag": "new"
