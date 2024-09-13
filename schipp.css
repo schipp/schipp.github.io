@@ -1,5 +1,5 @@
 body {
-    background-color: #191724;
+    background-color: #0E1116;
     color: #e0def4;
     font-family: verdana;
 }
@@ -31,7 +31,7 @@ div.grid-container {
 
 /* Grid item styles */
 div.grid-item {
-    background-color: #191724;
+    background-color: #0E1116;
     padding: 5px;
     font-size: 15px;
     text-align: center;
@@ -68,7 +68,7 @@ div.overlay-image .image {
 
 /* H3 element in overlay image */
 div.overlay-image h3 {
-    background-color: #191724;
+    background-color: #0E1116;
     position: absolute;
     top: -20%;
     left: -8%;
@@ -89,7 +89,7 @@ div.overlay-image h3 {
 
 /* Journal element in overlay image */
 div.overlay-image journal {
-    color: #191724;
+    color: #0E1116;
     position: absolute;
     bottom: 7%;
     right: 7%;
@@ -101,6 +101,6 @@ div.overlay-image journal {
 
 /* Image styles */
 img {
-    border: 2px solid #191724;
+    border: 2px solid #0E1116;
     border-radius: 10%;
 }
