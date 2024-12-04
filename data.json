@@ -15,7 +15,7 @@
             "year": "2024",
             "doi": "doi:10.1126/science.adm9247",
             "url": "https://doi.org/10.1126/science.adm9247",
-            "preview_img": "img/svennevig2024_preview.png",
+            "preview_img": "img/svennevig2024_preview.webp",
             "tag": ""
         },
         "3": {
@@ -24,7 +24,7 @@
             "year": "2024",
             "doi": "doi:10.1029/2023JB028320",
             "url": "https://doi.org/10.1029/2023JB028320",
-            "preview_img": "img/maass2024_preview.png",
+            "preview_img": "img/maass2024_preview.webp",
             "tag": ""
         },
         "4": {
@@ -33,7 +33,7 @@
             "year": "2023",
             "doi": "doi:10.26443/seismica.v2i2.499",
             "url": "https://doi.org/10.26443/seismica.v2i2.499",
-            "preview_img": "img/schippkus2023_preview.png",
+            "preview_img": "img/schippkus2023_preview.webp",
             "tag": ""
         },
         "5": {
@@ -42,7 +42,7 @@
             "year": "2022",
             "doi": "doi:10.26443/seismica.v1i1.195",
             "url": "https://doi.org/10.26443/seismica.v1i1.195",
-            "preview_img": "img/schippkus2022b_preview.png",
+            "preview_img": "img/schippkus2022b_preview.webp",
             "tag": ""
         },
         "6": {
@@ -51,7 +51,7 @@
             "year": "2022",
             "doi": "doi:10.1093/gji/ggac240",
             "url": "https://doi.org/10.1093/gji/ggac240",
-            "preview_img": "img/schippkus2022a_preview.png",
+            "preview_img": "img/schippkus2022a_preview.webp",
             "tag": ""
         },
         "7": {
@@ -60,7 +60,7 @@
             "year": "2020",
             "doi": "doi:10.1785/0220200153",
             "url": "https://doi.org/10.1785/0220200153",
-            "preview_img": "img/schippkus2020b_preview.png",
+            "preview_img": "img/schippkus2020b_preview.webp",
             "tag": ""
         },
         "8": {
@@ -69,7 +69,7 @@
             "year": "2020",
             "doi": "doi:10.1093/gji/ggz565",
             "url": "https://doi.org/10.1093/gji/ggz565",
-            "preview_img": "img/schippkus2020a_preview.png",
+            "preview_img": "img/schippkus2020a_preview.webp",
             "tag": ""
         },
         "9": {
@@ -78,7 +78,7 @@
             "year": "2019",
             "doi": "doi:10.17738/ajes.2019.0010",
             "url": "https://doi.org/10.17738/ajes.2019.0010",
-            "preview_img": "img/schippkus2019_preview.png",
+            "preview_img": "img/schippkus2019_preview.webp",
             "tag": ""
         },
         "10": {
@@ -87,7 +87,7 @@
             "year": "2018",
             "doi": "doi:10.1093/gji/ggy259",
             "url": "https://doi.org/10.1093/gji/ggy259",
-            "preview_img": "img/schippkus2018_preview.png",
+            "preview_img": "img/schippkus2018_preview.webp",
             "tag": ""
         }
     },
@@ -95,49 +95,49 @@
         "1": {
             "title": "A rockslide-generated tsunami in a Greenland fjord rang Earth for 9 days",
             "url": "https://github.com/ROBelgium/VLPGreenland",
-            "preview_img": "img/svennevig2024_preview.png",
+            "preview_img": "img/svennevig2024_preview.webp",
             "tag": ""
         },
         "2": {
             "title": "Fast beamforming in Python",
             "url": "https://github.com/schipp/fast_beamforming",
-            "preview_img": "img/fast_beamforming.png",
+            "preview_img": "img/fast_beamforming.webp",
             "tag": ""
         },
         "3": {
             "title": "Repeating waves in the coda of ambient noise correlations",
             "url": "https://github.com/schipp/repeating_direct_waves",
-            "preview_img": "img/schippkus2023_preview.png",
+            "preview_img": "img/schippkus2023_preview.webp",
             "tag": ""
         },
         "4": {
             "title": "Numerical Matched Field Processing",
             "url": "https://github.com/schipp/matched_field_processing",
-            "preview_img": "img/schippkus2022a_preview.png",
+            "preview_img": "img/schippkus2022a_preview.webp",
             "tag": ""
         },
         "5": {
             "title": "Eikonal Tomography",
             "url": "https://github.com/schipp/eikonal_tomography",
-            "preview_img": "img/eikonal_preview.png",
+            "preview_img": "img/eikonal_preview.webp",
             "tag": ""
         },
         "6": {
             "title": "Azimuthal anisotropy of surface waves",
             "url": "https://github.com/schipp/azimuthal_anisotropy",
-            "preview_img": "img/aniso_preview.png",
+            "preview_img": "img/aniso_preview.webp",
             "tag": ""
         },
         "7": {
             "title": "Classical Matched Field Processing",
             "url": "https://github.com/schipp/matched_field_processing_simple",
-            "preview_img": "img/mfp_preview.png",
+            "preview_img": "img/mfp_preview.webp",
             "tag": ""
         },
         "8": {
             "title": "Moment Tensor Inversion",
             "url": "https://github.com/schipp/moment_tensor_inversion",
-            "preview_img": "img/mt_preview.png",
+            "preview_img": "img/mt_preview.webp",
             "tag": ""
         }
     }
