@@ -1,15 +1,24 @@
 {
     "publications": {
         "1": {
+            "title": "Predictive modeling of seismic wave fields: Learning the transfer function using encoder-decoder networks",
+            "journal": "pre-print",
+            "year": "2024",
+            "doi": "doi:10.31223/X5TD81",
+            "url": "https://doi.org/10.31223/X5TD81",
+            "preview_img": "img/klinge2024_preview.webp",
+            "tag": "new"
+        },
+        "2": {
             "title": "A rockslide-generated tsunami in a Greenland fjord rang Earth for 9 days",
             "journal": "Science",
             "year": "2024",
             "doi": "doi:10.1126/science.adm9247",
             "url": "https://doi.org/10.1126/science.adm9247",
             "preview_img": "img/svennevig2024_preview.png",
-            "tag": "new"
+            "tag": ""
         },
-        "2": {
+        "3": {
             "title": "Stacking of distributed dynamic strain reveals link between seismic velocity changes and the 2020 unrest in Reykjanes",
             "journal": "JGR Solid Earth",
             "year": "2024",
@@ -18,7 +27,7 @@
             "preview_img": "img/maass2024_preview.png",
             "tag": ""
         },
-        "3": {
+        "4": {
             "title": "Continuous isolated noise sources induce repeating waves in the coda of ambient noise correlations",
             "journal": "Seismica",
             "year": "2023",
@@ -27,7 +36,7 @@
             "preview_img": "img/schippkus2023_preview.png",
             "tag": ""
         },
-        "4": {
+        "5": {
             "title": "Seismic Interferometry in the presence of an isolated source",
             "journal": "Seismica",
             "year": "2022",
@@ -36,7 +45,7 @@
             "preview_img": "img/schippkus2022b_preview.png",
             "tag": ""
         },
-        "5": {
+        "6": {
             "title": "Matched Field Processing accounting for complex Earth structure: method and review",
             "journal": "GJI",
             "year": "2022",
@@ -45,7 +54,7 @@
             "preview_img": "img/schippkus2022a_preview.png",
             "tag": ""
         },
-        "6": {
+        "7": {
             "title": "Characteristics of the ambient seismic field on a large-N seismic array in the Vienna basin",
             "journal": "SRL",
             "year": "2020",
@@ -54,7 +63,7 @@
             "preview_img": "img/schippkus2020b_preview.png",
             "tag": ""
         },
-        "7": {
+        "8": {
             "title": "Azimuthal anisotropy in the wider Vienna basin region: a proxy for the present-day stress field and deformation",
             "journal": "GJI",
             "year": "2020",
@@ -63,7 +72,7 @@
             "preview_img": "img/schippkus2020a_preview.png",
             "tag": ""
         },
-        "8": {
+        "9": {
             "title": "The Alland earthquake sequence in Eastern Austria: Shedding light on tectonic stress geometry in a key area of seismic hazard",
             "journal": "Austrian J. Earth. Sci.",
             "year": "2019",
@@ -72,7 +81,7 @@
             "preview_img": "img/schippkus2019_preview.png",
             "tag": ""
         },
-        "9": {
+        "10": {
             "title": "Ambient noise tomography of the wider Vienna Basin region",
             "journal": "GJI",
             "year": "2018",
@@ -87,7 +96,7 @@
             "title": "A rockslide-generated tsunami in a Greenland fjord rang Earth for 9 days",
             "url": "https://github.com/ROBelgium/VLPGreenland",
             "preview_img": "img/svennevig2024_preview.png",
-            "tag": "new"
+            "tag": ""
         },
         "2": {
             "title": "Fast beamforming in Python",
