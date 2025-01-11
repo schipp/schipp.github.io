@@ -1,6 +1,6 @@
 body {
     background-color: #0E1116;
-    color: #e0def4;
+    color: #E1E1E6;
     font-family: verdana;
 }
 
@@ -11,12 +11,12 @@ h1, h2, p {
 
 /* Anchor tag styles */
 a:link, a:visited {
-    color: #e0def4;
+    color: #E1E1E6;
     text-decoration: none;
 }
 
 a:hover, a:active {
-    color: #e0def4;
+    color: #E1E1E6;
     text-decoration: underline;
 }
 
@@ -35,15 +35,17 @@ div.grid-item {
     padding: 5px;
     font-size: 15px;
     text-align: center;
-    height: 300px;
+    height: 100%;
 }
 
 /* Text styles */
 div.text {
-    font-weight: bold;
+    /* font-weight: bold; */
     overflow: hidden;
     text-overflow: ellipsis;
     max-height: 90px;
+    text-align: center;
+    /* padding: 5px; */
 }
 
 /* Title styles */
@@ -76,26 +78,36 @@ div.overlay-image h3 {
     transform: rotate(-30deg);
     font-size: 22pt;
     padding: 5px;
-    box-shadow: 0px 0px 30px 10px;
-    animation: anim_color 5s linear infinite;
+    box-shadow: 0px 0px 15px 5px;
+    animation: anim_color 4s ease-in-out infinite;
 }
 
 /* Keyframes for animation */
 @keyframes anim_color {
-    0%, 100% { color: #f6c177; }
-    25%, 75% { color: #ebbcba; }
-    50% { color: #9ccfd8; }
+    0%, 100% { color: #EDD3AD; }
+    50% { color: #FDF5DA; }
 }
 
 /* Journal element in overlay image */
-div.overlay-image journal {
+div.overlay-image authorrefleft {
     color: #0E1116;
     position: absolute;
-    bottom: 7%;
-    right: 7%;
+    bottom: 14%;
+    left: 7%;
     font-weight: bold;
-    text-align: right;
-    text-shadow: -1px -1px 0 #e0def4, 1px -1px 0 #e0def4, -1px 1px 0 #e0def4, 1px 1px 0 #e0def4;
+    text-align: left;
+    text-shadow: -1px -1px 0 #E1E1E6, 1px -1px 0 #E1E1E6, -1px 1px 0 #E1E1E6, 1px 1px 0 #E1E1E6;
+    max-width: 180px;
+}
+
+div.overlay-image authorrefright {
+    color: #0E1116;
+    position: absolute;
+    bottom: 5%;
+    left: 7%;
+    font-weight: bold;
+    text-align: left;
+    text-shadow: -1px -1px 0 #E1E1E6, 1px -1px 0 #E1E1E6, -1px 1px 0 #E1E1E6, 1px 1px 0 #E1E1E6;
     max-width: 180px;
 }
 

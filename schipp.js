@@ -21,13 +21,14 @@ function generateGrid(papers, gridType) {
         }
 
         if (gridType === 'papers') {
-            overlayImage.appendChild(createElement('journal', null, `${paper.journal}, ${paper.year}`));
+            overlayImage.appendChild(createElement('authorrefleft', null, `${paper.author}`));
+            overlayImage.appendChild(createElement('authorrefright', null, `${paper.journal}, ${paper.year}`));
         }
 
-        const title = createElement('div', 'text', paper.title);
+        // const title = createElement('div', 'text', `${paper.title}`);
         const link = createElement('a', null);
         link.href = paper.url;
-        link.append(overlayImage, title);
+        link.append(overlayImage);
         gridItem.appendChild(link);
 
         gridContainer.appendChild(gridItem);
