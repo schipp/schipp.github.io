@@ -6,11 +6,6 @@
     <title>Sven Schippkus</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        :root {
-            --max-grid-width: 800px;
-            --image-size: 250px;
-        }
-
         body {
             margin: 0;
             padding: 2rem;
@@ -48,9 +43,9 @@
 
         .paper-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 0;
-            max-width: var(--max-grid-width);
+            grid-template-columns: repeat(3, 1fr);
+            gap: .5em;
+            max-width: 800px;
             margin: 0 auto;
         }
 
@@ -69,9 +64,10 @@
 
         .paper-image-wrapper {
             position: relative;
-            width: var(--image-size);
-            height: var(--image-size);
-            flex-shrink: 0;
+            width: 100%;
+            aspect-ratio: 1/1;
+            height: auto;
+            /* flex-shrink: 0; */
         }
 
         .paper-image {
@@ -126,18 +122,20 @@
         }
 
         /* Responsive adjustments */
-        @media (max-width: 850px) {
+        @media (max-width: 700px) {
             .paper-grid {
-                max-width: 540px;
+                max-width: 650px;
+                grid-template-columns: repeat(2, 1fr);
             }
         }
 
-        @media (max-width: 540px) {
+        @media (max-width: 400px) {
             body {
                 padding: 1rem;
             }
 
             .paper-grid {
+                grid-template-columns: 1fr;
                 gap: 1.2rem;
                 max-width: 98vw;
             }
@@ -181,7 +179,7 @@
             <div class="paper-card">
                 <div class="paper-image-wrapper">
                     <img src="img/klinge2025_preview.webp" alt="" class="paper-image">
-                    <span class="paper-overlay">Klinge et al. 2025<br>EarthArXiv</span>
+                    <span class="paper-overlay">Klinge et al.<br>EarthArXiv, 2025</span>
                 </div>
                 <div class="paper-title">
                     <div class="tag">NEW</div> Unlocking the potential of single stations to replace seismic arrays
@@ -194,7 +192,7 @@
             <div class="paper-card">
                 <div class="paper-image-wrapper">
                     <img src="img/safarkhani2025_preview.webp" alt="" class="paper-image">
-                    <span class="paper-overlay">Safarkhani et al. 2025<br>in revision at GJI</span>
+                    <span class="paper-overlay">Safarkhani et al.<br>in revision at GJI</span>
                 </div>
                 <div class="paper-title">
                     <div class="tag">NEW</div> Imprints of time-dependent microseism source distributions on the coda of
@@ -208,7 +206,7 @@
             <div class="paper-card">
                 <div class="paper-image-wrapper">
                     <img src="img/klinge2024_preview.webp" alt="Paper 2 Figure" class="paper-image">
-                    <span class="paper-overlay">Klinge et al. 2025<br>GJI</span>
+                    <span class="paper-overlay">Klinge et al.<br>GJI, 2025</span>
                 </div>
                 <div class="paper-title">Predictive modeling of seismic wave fields: Learning the transfer
                     function
@@ -221,7 +219,7 @@
             <div class="paper-card">
                 <div class="paper-image-wrapper">
                     <img src="img/svennevig2024_preview.webp" alt="" class="paper-image">
-                    <span class="paper-overlay">Svennevig et al. 2024<br>Science</span>
+                    <span class="paper-overlay">Svennevig et al.<br>Science, 2024</span>
                 </div>
                 <div class="paper-title">A rockslide-generated tsunami in a Greenland fjord rang Earth for 9 days
                 </div>
@@ -233,7 +231,7 @@
             <div class="paper-card">
                 <div class="paper-image-wrapper">
                     <img src="img/maass2024_preview.webp" alt="" class="paper-image">
-                    <span class="paper-overlay">Maass et al. 2024<br>JGR SE</span>
+                    <span class="paper-overlay">Maass et al.<br>JGR SE, 2024</span>
                 </div>
                 <div class="paper-title">Stacking of distributed dynamic strain reveals link between seismic
                     velocity changes and the 2020 unrest in Reykjanes
@@ -246,7 +244,7 @@
             <div class="paper-card">
                 <div class="paper-image-wrapper">
                     <img src="img/schippkus2023_preview.webp" alt="" class="paper-image">
-                    <span class="paper-overlay">Schippkus et al. 2023<br>Seismica</span>
+                    <span class="paper-overlay">Schippkus et al.<br>Seismica, 2023</span>
                 </div>
                 <div class="paper-title">Continuous isolated noise sources induce repeating waves in the coda of
                     ambient noise correlations
@@ -259,7 +257,7 @@
             <div class="paper-card">
                 <div class="paper-image-wrapper">
                     <img src="img/schippkus2022b_preview.webp" alt="" class="paper-image">
-                    <span class="paper-overlay">Schippkus et al. 2022<br>Seismica</span>
+                    <span class="paper-overlay">Schippkus et al.<br>Seismica, 2022</span>
                 </div>
                 <div class="paper-title">Seismic Interferometry in the presence of an isolated source
                 </div>
@@ -271,7 +269,7 @@
             <div class="paper-card">
                 <div class="paper-image-wrapper">
                     <img src="img/schippkus2022a_preview.webp" alt="" class="paper-image">
-                    <span class="paper-overlay">Schippkus et al. 2022<br>GJI</span>
+                    <span class="paper-overlay">Schippkus et al.<br>GJI, 2022</span>
                 </div>
                 <div class="paper-title">Matched Field Processing accounting for complex Earth structure: method and
                     review
@@ -284,7 +282,7 @@
             <div class="paper-card">
                 <div class="paper-image-wrapper">
                     <img src="img/schippkus2020b_preview.webp" alt="" class="paper-image">
-                    <span class="paper-overlay">Schippkus et al. 2020<br>SRL</span>
+                    <span class="paper-overlay">Schippkus et al.<br>SRL, 2020</span>
                 </div>
                 <div class="paper-title">Characteristics of the ambient seismic field on a large-N seismic array in
                     the Vienna basin
@@ -297,7 +295,7 @@
             <div class="paper-card">
                 <div class="paper-image-wrapper">
                     <img src="img/schippkus2020a_preview.webp" alt="" class="paper-image">
-                    <span class="paper-overlay">Schippkus et al. 2020<br>GJI</span>
+                    <span class="paper-overlay">Schippkus et al.<br>GJI, 2020</span>
                 </div>
                 <div class="paper-title">Azimuthal anisotropy in the wider Vienna basin region: a proxy for the
                     present-day stress field and deformation
@@ -310,7 +308,7 @@
             <div class="paper-card">
                 <div class="paper-image-wrapper">
                     <img src="img/schippkus2019_preview.webp" alt="" class="paper-image">
-                    <span class="paper-overlay">Schippkus et al. 2019<br>Austrian JES</span>
+                    <span class="paper-overlay">Schippkus et al.<br>Aus. JES, 2019</span>
                 </div>
                 <div class="paper-title">The Alland earthquake sequence in Eastern Austria: Shedding light on
                     tectonic stress geometry in a key area of seismic hazard
@@ -323,7 +321,7 @@
             <div class="paper-card">
                 <div class="paper-image-wrapper">
                     <img src="img/schippkus2018_preview.webp" alt="" class="paper-image">
-                    <span class="paper-overlay">Schippkus et al. 2018<br>GJI</span>
+                    <span class="paper-overlay">Schippkus et al.<br>GJI, 2018</span>
                 </div>
                 <div class="paper-title">Ambient noise tomography of the wider Vienna Basin region
                 </div>
