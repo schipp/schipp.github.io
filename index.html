@@ -1,488 +1,693 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Sven Schippkus</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
+      body {
+        margin: 0;
+        padding: 2rem;
+        font-family: verdana;
+        background: #0e1116;
+        color: #e1e1e6;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        text-align: center;
+      }
+
+      h2 {
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+
+      /* no URL styling */
+      a {
+        color: inherit;
+        text-decoration: none;
+        font-weight: inherit;
+        font-style: inherit;
+        background: none;
+        border: none;
+        outline: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .paper-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5em;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .paper-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #0e1116;
+        overflow: hidden;
+      }
+
+      .paper-card:hover {
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.13);
+      }
+
+      .paper-image-wrapper {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 1/1;
+        height: auto;
+        border: 2px solid #0e1116;
+        border-radius: 20px;
+        /* flex-shrink: 0; */
+      }
+
+      .paper-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        border-radius: 20px;
+      }
+
+      .paper-overlay {
+        position: absolute;
+        bottom: 8px;
+        right: 8px;
+        background: rgba(34, 40, 49, 0.86);
+        color: #e1e1e6;
+        font-size: 0.75em;
+        padding: 4px 10px;
+        border-radius: 8px;
+        pointer-events: none;
+        max-width: 80%;
+        text-align: right;
+      }
+
+      .like-overlay {
+        position: absolute;
+        bottom: 4px;
+        left: 4px;
+        padding: 4px 8px;
+        border-radius: 8px;
+        pointer-events: none;
+        max-width: 80%;
+        text-align: right;
+      }
+
+      .paper-title {
+        margin: 0.25em 0 0.75em 0;
+        font-weight: 500;
+        text-align: left;
+        font-size: 0.9em;
+        padding: 0 0;
+        line-height: 1.25;
+      }
+
+      .tag {
+        background-color: #0e1116;
+        display: inline-block;
+        position: relative;
+        animation: anim_color 4s ease-in-out infinite;
+      }
+
+      @keyframes anim_color {
+        0%,
+        100% {
+          color: #bd1f01;
+        }
+
+        50% {
+          color: #edd3ad;
+        }
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 700px) {
+        .paper-grid {
+          max-width: 650px;
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 400px) {
         body {
-            margin: 0;
-            padding: 2rem;
-            font-family: verdana;
-            background: #0E1116;
-            color: #E1E1E6;
-        }
-
-        h1 {
-            text-align: center;
-            margin-bottom: 1rem;
-        }
-
-        p {
-            text-align: center;
-        }
-
-        h2 {
-            text-align: center;
-            margin-bottom: 1rem;
-        }
-
-        /* no URL styling */
-        a {
-            color: inherit;
-            text-decoration: none;
-            font-weight: inherit;
-            font-style: inherit;
-            background: none;
-            border: none;
-            outline: none;
-            padding: 0;
-            margin: 0;
+          padding: 1rem;
         }
 
         .paper-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: .5em;
-            max-width: 800px;
-            margin: 0 auto;
+          grid-template-columns: 1fr;
+          gap: 1.2rem;
+          max-width: 98vw;
         }
 
-        .paper-card {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background: #0E1116;
-            overflow: hidden;
-        }
-
-        .paper-card:hover {
-            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.13);
+        .paper-card,
+        .paper-image-wrapper {
+          width: 100%;
+          min-width: 0;
         }
 
         .paper-image-wrapper {
-            position: relative;
-            width: 100%;
-            aspect-ratio: 1/1;
-            height: auto;
-            border: 2px solid #0E1116;
-            border-radius: 20px;
-            /* flex-shrink: 0; */
+          width: 100%;
+          max-width: 100vw;
+          height: auto;
+          aspect-ratio: 1/1;
         }
 
-        .paper-image {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-            border-radius: 20px;
+        .paper-image,
+        .paper-image-wrapper {
+          width: 100%;
+          height: auto;
+          min-width: 0;
+          aspect-ratio: 1/1;
         }
-
-        .paper-overlay {
-            position: absolute;
-            bottom: 8px;
-            right: 8px;
-            background: rgba(34, 40, 49, 0.86);
-            color: #E1E1E6;
-            font-size: 0.75em;
-            padding: 4px 10px;
-            border-radius: 8px;
-            pointer-events: none;
-            max-width: 80%;
-            text-align: right;
-        }
-
-        .like-overlay {
-            position: absolute;
-            bottom: 4px;
-            left: 4px;
-            padding: 4px 8px;
-            border-radius: 8px;
-            pointer-events: none;
-            max-width: 80%;
-            text-align: right;
-        }
-
-        .paper-title {
-            margin: .25em 0 .75em 0;
-            font-weight: 500;
-            text-align: left;
-            font-size: .9em;
-            padding: 0 0;
-            line-height: 1.25;
-        }
-
-        .tag {
-            background-color: #0E1116;
-            display: inline-block;
-            position: relative;
-            animation: anim_color 4s ease-in-out infinite;
-        }
-
-        @keyframes anim_color {
-
-            0%,
-            100% {
-                color: #BD1F01;
-            }
-
-            50% {
-                color: #EDD3AD;
-            }
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 700px) {
-            .paper-grid {
-                max-width: 650px;
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 400px) {
-            body {
-                padding: 1rem;
-            }
-
-            .paper-grid {
-                grid-template-columns: 1fr;
-                gap: 1.2rem;
-                max-width: 98vw;
-            }
-
-            .paper-card,
-            .paper-image-wrapper {
-                width: 100%;
-                min-width: 0;
-            }
-
-            .paper-image-wrapper {
-                width: 100%;
-                max-width: 100vw;
-                height: auto;
-                aspect-ratio: 1/1;
-            }
-
-            .paper-image,
-            .paper-image-wrapper {
-                width: 100%;
-                height: auto;
-                min-width: 0;
-                aspect-ratio: 1/1;
-            }
-        }
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <h1>Sven Schippkus</h1>
     <p>Postdoc in Seismology at the University of Hamburg</p>
     <p>contact: sven.schippkus(at)uni-hamburg.de</p>
 
-    <h2><a href="https://scholar.google.com/citations?user=tAKcJ5sAAAAJ" target="_blank" rel="noopener">Research
-            Papers</a></h2>
+    <h2>
+      <a
+        href="https://scholar.google.com/citations?user=tAKcJ5sAAAAJ"
+        target="_blank"
+        rel="noopener"
+        >Research Papers</a
+      >
+    </h2>
     <div class="paper-grid">
+      <!-- Add new papers here -->
 
-        <!-- Add new papers here -->
+      <!-- Klinge et al. 2025b -->
+      <a href="https://doi.org/10.31223/X51T68" target="_blank" rel="noopener">
+        <div class="paper-card">
+          <div class="paper-image-wrapper">
+            <img src="img/klinge2025_preview.webp" alt="" class="paper-image" />
+            <span class="like-overlay"
+              ><img
+                alt="Citations badge"
+                src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.openalex.org%2Fworks%2Fhttps%3A%2F%2Fdoi.org%2F10.31223%2FX51T68&query=cited_by_count&style=flat&logo=bookmeter&logoColor=%23E1E1E6&label=%20&color=%230E1116DC"
+            /></span>
+            <span class="paper-overlay"
+              >Klinge et al.<br />EarthArXiv, 2025</span
+            >
+          </div>
+          <div class="paper-title">
+            <div class="tag">NEW</div>
+            Unlocking the potential of single stations to replace seismic arrays
+          </div>
+        </div>
+      </a>
 
+      <!-- Safarkhani et al. 2025 -->
+      <a href="#">
+        <div class="paper-card">
+          <div class="paper-image-wrapper">
+            <img
+              src="img/safarkhani2025_preview.webp"
+              alt=""
+              class="paper-image"
+            />
+            <span class="paper-overlay"
+              >Safarkhani et al.<br />in revision at GJI</span
+            >
+          </div>
+          <div class="paper-title">
+            <div class="tag">NEW</div>
+            Imprints of time-dependent microseism source distributions on the
+            coda of correlations
+          </div>
+        </div>
+      </a>
 
-        <!-- Klinge et al. 2025b -->
-        <a href="https://doi.org/10.31223/X51T68" target="_blank" rel="noopener">
-            <div class="paper-card">
-                <div class="paper-image-wrapper">
-                    <img src="img/klinge2025_preview.webp" alt="" class="paper-image">
-                    <span class="like-overlay"><img alt="Citations badge"
-                            src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.openalex.org%2Fworks%2Fhttps%3A%2F%2Fdoi.org%2F10.31223%2FX51T68&query=cited_by_count&style=flat&logo=bookmeter&logoColor=%23E1E1E6&label=%20&color=%230E1116DC"></span>
-                    <span class="paper-overlay">Klinge et al.<br>EarthArXiv, 2025</span>
-                </div>
-                <div class="paper-title">
-                    <div class="tag">NEW</div> Unlocking the potential of single stations to replace seismic arrays
-                </div>
-            </div>
-        </a>
+      <!-- Klinge et al. 2025a -->
+      <a
+        href="https://doi.org/10.1093/gji/ggaf004"
+        target="_blank"
+        rel="noopener"
+      >
+        <div class="paper-card">
+          <div class="paper-image-wrapper">
+            <img
+              src="img/klinge2024_preview.webp"
+              alt="Paper 2 Figure"
+              class="paper-image"
+            />
+            <span class="like-overlay"
+              ><img
+                alt="Citations badge"
+                src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.openalex.org%2Fworks%2Fhttps%3A%2F%2Fdoi.org%2F10.1093%2Fgji%2Fggaf004&query=cited_by_count&style=flat&logo=bookmeter&logoColor=%23E1E1E6&label=%20&color=%230E1116DC"
+            /></span>
+            <span class="paper-overlay">Klinge et al.<br />GJI, 2025</span>
+          </div>
+          <div class="paper-title">
+            Predictive modeling of seismic wave fields: Learning the transfer
+            function using encoder-decoder networks
+          </div>
+        </div>
+      </a>
 
-        <!-- Safarkhani et al. 2025 -->
-        <a href="#">
-            <div class="paper-card">
-                <div class="paper-image-wrapper">
-                    <img src="img/safarkhani2025_preview.webp" alt="" class="paper-image">
-                    <span class="paper-overlay">Safarkhani et al.<br>in revision at GJI</span>
-                </div>
-                <div class="paper-title">
-                    <div class="tag">NEW</div> Imprints of time-dependent microseism source distributions on the coda of
-                    correlations
-                </div>
-            </div>
-        </a>
+      <!-- Svennevig et al. 2024 -->
+      <a
+        href="https://doi.org/10.1126/science.adm9247"
+        target="_blank"
+        rel="noopener"
+      >
+        <div class="paper-card">
+          <div class="paper-image-wrapper">
+            <img
+              src="img/svennevig2024_preview.webp"
+              alt=""
+              class="paper-image"
+            />
+            <span class="like-overlay"
+              ><img
+                alt="Citations badge"
+                src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.openalex.org%2Fworks%2Fhttps%3A%2F%2Fdoi.org%2F10.1126%2Fscience.adm9247&query=cited_by_count&style=flat&logo=bookmeter&logoColor=%23E1E1E6&label=%20&color=%230E1116DC"
+            /></span>
+            <span class="paper-overlay"
+              >Svennevig et al.<br />Science, 2024</span
+            >
+          </div>
+          <div class="paper-title">
+            A rockslide-generated tsunami in a Greenland fjord rang Earth for 9
+            days
+          </div>
+        </div>
+      </a>
 
-        <!-- Klinge et al. 2025a -->
-        <a href="https://doi.org/10.1093/gji/ggaf004" target="_blank" rel="noopener">
-            <div class="paper-card">
-                <div class="paper-image-wrapper">
-                    <img src="img/klinge2024_preview.webp" alt="Paper 2 Figure" class="paper-image">
-                    <span class="like-overlay"><img alt="Citations badge"
-                            src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.openalex.org%2Fworks%2Fhttps%3A%2F%2Fdoi.org%2F10.1093%2Fgji%2Fggaf004&query=cited_by_count&style=flat&logo=bookmeter&logoColor=%23E1E1E6&label=%20&color=%230E1116DC"></span>
-                    <span class="paper-overlay">Klinge et al.<br>GJI, 2025</span>
-                </div>
-                <div class="paper-title">Predictive modeling of seismic wave fields: Learning the transfer
-                    function
-                    using encoder-decoder networks</div>
-            </div>
-        </a>
+      <!-- Maass et al. 2024 -->
+      <a
+        href="https://doi.org/10.1029/2023JB028320"
+        target="_blank"
+        rel="noopener"
+      >
+        <div class="paper-card">
+          <div class="paper-image-wrapper">
+            <img src="img/maass2024_preview.webp" alt="" class="paper-image" />
+            <span class="like-overlay"
+              ><img
+                alt="Citations badge"
+                src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.openalex.org%2Fworks%2Fhttps%3A%2F%2Fdoi.org%2F10.1029%2F2023JB028320&query=cited_by_count&style=flat&logo=bookmeter&logoColor=%23E1E1E6&label=%20&color=%230E1116DC"
+            /></span>
+            <span class="paper-overlay">Maass et al.<br />JGR SE, 2024</span>
+          </div>
+          <div class="paper-title">
+            Stacking of distributed dynamic strain reveals link between seismic
+            velocity changes and the 2020 unrest in Reykjanes
+          </div>
+        </div>
+      </a>
 
-        <!-- Svennevig et al. 2024 -->
-        <a href="https://doi.org/10.1126/science.adm9247" target="_blank" rel="noopener">
-            <div class="paper-card">
-                <div class="paper-image-wrapper">
-                    <img src="img/svennevig2024_preview.webp" alt="" class="paper-image">
-                    <span class="like-overlay"><img alt="Citations badge"
-                            src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.openalex.org%2Fworks%2Fhttps%3A%2F%2Fdoi.org%2F10.1126%2Fscience.adm9247&query=cited_by_count&style=flat&logo=bookmeter&logoColor=%23E1E1E6&label=%20&color=%230E1116DC"></span>
-                    <span class="paper-overlay">Svennevig et al.<br>Science, 2024</span>
-                </div>
-                <div class="paper-title">A rockslide-generated tsunami in a Greenland fjord rang Earth for 9 days
-                </div>
-            </div>
-        </a>
+      <!-- Schippkus et al. 2023 -->
+      <a
+        href="https://doi.org/10.26443/seismica.v2i2.499"
+        target="_blank"
+        rel="noopener"
+      >
+        <div class="paper-card">
+          <div class="paper-image-wrapper">
+            <img
+              src="img/schippkus2023_preview.webp"
+              alt=""
+              class="paper-image"
+            />
+            <span class="like-overlay"
+              ><img
+                alt="Citations badge"
+                src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.openalex.org%2Fworks%2Fhttps%3A%2F%2Fdoi.org%2F10.26443%2Fseismica.v2i2.499&query=cited_by_count&style=flat&logo=bookmeter&logoColor=%23E1E1E6&label=%20&color=%230E1116DC"
+            /></span>
+            <span class="paper-overlay"
+              >Schippkus et al.<br />Seismica, 2023</span
+            >
+          </div>
+          <div class="paper-title">
+            Continuous isolated noise sources induce repeating waves in the coda
+            of ambient noise correlations
+          </div>
+        </div>
+      </a>
 
-        <!-- Maass et al. 2024 -->
-        <a href="https://doi.org/10.1029/2023JB028320" target="_blank" rel="noopener">
-            <div class="paper-card">
-                <div class="paper-image-wrapper">
-                    <img src="img/maass2024_preview.webp" alt="" class="paper-image">
-                    <span class="like-overlay"><img alt="Citations badge"
-                            src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.openalex.org%2Fworks%2Fhttps%3A%2F%2Fdoi.org%2F10.1029%2F2023JB028320&query=cited_by_count&style=flat&logo=bookmeter&logoColor=%23E1E1E6&label=%20&color=%230E1116DC"></span>
-                    <span class="paper-overlay">Maass et al.<br>JGR SE, 2024</span>
-                </div>
-                <div class="paper-title">Stacking of distributed dynamic strain reveals link between seismic
-                    velocity changes and the 2020 unrest in Reykjanes
-                </div>
-            </div>
-        </a>
+      <!-- Schippkus et al. 2022b -->
+      <a
+        href="https://doi.org/10.26443/seismica.v1i1.195"
+        target="_blank"
+        rel="noopener"
+      >
+        <div class="paper-card">
+          <div class="paper-image-wrapper">
+            <img
+              src="img/schippkus2022b_preview.webp"
+              alt=""
+              class="paper-image"
+            />
+            <span class="like-overlay"
+              ><img
+                alt="Citations badge"
+                src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.openalex.org%2Fworks%2Fhttps%3A%2F%2Fdoi.org%2F10.26443%2Fseismica.v1i1.195&query=cited_by_count&style=flat&logo=bookmeter&logoColor=%23E1E1E6&label=%20&color=%230E1116DC"
+            /></span>
+            <span class="paper-overlay"
+              >Schippkus et al.<br />Seismica, 2022</span
+            >
+          </div>
+          <div class="paper-title">
+            Seismic Interferometry in the presence of an isolated source
+          </div>
+        </div>
+      </a>
 
-        <!-- Schippkus et al. 2023 -->
-        <a href="https://doi.org/10.26443/seismica.v2i2.499" target="_blank" rel="noopener">
-            <div class="paper-card">
-                <div class="paper-image-wrapper">
-                    <img src="img/schippkus2023_preview.webp" alt="" class="paper-image">
-                    <span class="like-overlay"><img alt="Citations badge"
-                            src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.openalex.org%2Fworks%2Fhttps%3A%2F%2Fdoi.org%2F10.26443%2Fseismica.v2i2.499&query=cited_by_count&style=flat&logo=bookmeter&logoColor=%23E1E1E6&label=%20&color=%230E1116DC"></span>
-                    <span class="paper-overlay">Schippkus et al.<br>Seismica, 2023</span>
-                </div>
-                <div class="paper-title">Continuous isolated noise sources induce repeating waves in the coda of
-                    ambient noise correlations
-                </div>
-            </div>
-        </a>
+      <!-- Schippkus et al. 2022a -->
+      <a
+        href="https://doi.org/10.1093/gji/ggac240"
+        target="_blank"
+        rel="noopener"
+      >
+        <div class="paper-card">
+          <div class="paper-image-wrapper">
+            <img
+              src="img/schippkus2022a_preview.webp"
+              alt=""
+              class="paper-image"
+            />
+            <span class="like-overlay"
+              ><img
+                alt="Citations badge"
+                src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.openalex.org%2Fworks%2Fhttps%3A%2F%2Fdoi.org%2F10.1093%2Fgji%2Fggac240&query=cited_by_count&style=flat&logo=bookmeter&logoColor=%23E1E1E6&label=%20&color=%230E1116DC"
+            /></span>
+            <span class="paper-overlay">Schippkus et al.<br />GJI, 2022</span>
+          </div>
+          <div class="paper-title">
+            Matched Field Processing accounting for complex Earth structure:
+            method and review
+          </div>
+        </div>
+      </a>
 
-        <!-- Schippkus et al. 2022b -->
-        <a href="https://doi.org/10.26443/seismica.v1i1.195" target="_blank" rel="noopener">
-            <div class="paper-card">
-                <div class="paper-image-wrapper">
-                    <img src="img/schippkus2022b_preview.webp" alt="" class="paper-image">
-                    <span class="like-overlay"><img alt="Citations badge"
-                            src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.openalex.org%2Fworks%2Fhttps%3A%2F%2Fdoi.org%2F10.26443%2Fseismica.v1i1.195&query=cited_by_count&style=flat&logo=bookmeter&logoColor=%23E1E1E6&label=%20&color=%230E1116DC"></span>
-                    <span class="paper-overlay">Schippkus et al.<br>Seismica, 2022</span>
-                </div>
-                <div class="paper-title">Seismic Interferometry in the presence of an isolated source
-                </div>
-            </div>
-        </a>
+      <!-- Schippkus et al. 2020b -->
+      <a
+        href="https://doi.org/10.1785/0220200153"
+        target="_blank"
+        rel="noopener"
+      >
+        <div class="paper-card">
+          <div class="paper-image-wrapper">
+            <img
+              src="img/schippkus2020b_preview.webp"
+              alt=""
+              class="paper-image"
+            />
+            <span class="like-overlay"
+              ><img
+                alt="Citations badge"
+                src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.openalex.org%2Fworks%2Fhttps%3A%2F%2Fdoi.org%2F10.1785%2F0220200153&query=cited_by_count&style=flat&logo=bookmeter&logoColor=%23E1E1E6&label=%20&color=%230E1116DC"
+            /></span>
+            <span class="paper-overlay">Schippkus et al.<br />SRL, 2020</span>
+          </div>
+          <div class="paper-title">
+            Characteristics of the ambient seismic field on a large-N seismic
+            array in the Vienna basin
+          </div>
+        </div>
+      </a>
 
-        <!-- Schippkus et al. 2022a -->
-        <a href="https://doi.org/10.1093/gji/ggac240" target="_blank" rel="noopener">
-            <div class="paper-card">
-                <div class="paper-image-wrapper">
-                    <img src="img/schippkus2022a_preview.webp" alt="" class="paper-image">
-                    <span class="like-overlay"><img alt="Citations badge"
-                            src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.openalex.org%2Fworks%2Fhttps%3A%2F%2Fdoi.org%2F10.1093%2Fgji%2Fggac240&query=cited_by_count&style=flat&logo=bookmeter&logoColor=%23E1E1E6&label=%20&color=%230E1116DC"></span>
-                    <span class="paper-overlay">Schippkus et al.<br>GJI, 2022</span>
-                </div>
-                <div class="paper-title">Matched Field Processing accounting for complex Earth structure: method and
-                    review
-                </div>
-            </div>
-        </a>
+      <!-- Schippkus et al. 2020a -->
+      <a
+        href="https://doi.org/10.1093/gji/ggz565"
+        target="_blank"
+        rel="noopener"
+      >
+        <div class="paper-card">
+          <div class="paper-image-wrapper">
+            <img
+              src="img/schippkus2020a_preview.webp"
+              alt=""
+              class="paper-image"
+            />
+            <span class="like-overlay"
+              ><img
+                alt="Citations badge"
+                src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.openalex.org%2Fworks%2Fhttps%3A%2F%2Fdoi.org%2F10.1093%2Fgji%2Fggz565&query=cited_by_count&style=flat&logo=bookmeter&logoColor=%23E1E1E6&label=%20&color=%230E1116DC"
+            /></span>
+            <span class="paper-overlay">Schippkus et al.<br />GJI, 2020</span>
+          </div>
+          <div class="paper-title">
+            Azimuthal anisotropy in the wider Vienna basin region: a proxy for
+            the present-day stress field and deformation
+          </div>
+        </div>
+      </a>
 
-        <!-- Schippkus et al. 2020b -->
-        <a href="https://doi.org/10.1785/0220200153" target="_blank" rel="noopener">
-            <div class="paper-card">
-                <div class="paper-image-wrapper">
-                    <img src="img/schippkus2020b_preview.webp" alt="" class="paper-image">
-                    <span class="like-overlay"><img alt="Citations badge"
-                            src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.openalex.org%2Fworks%2Fhttps%3A%2F%2Fdoi.org%2F10.1785%2F0220200153&query=cited_by_count&style=flat&logo=bookmeter&logoColor=%23E1E1E6&label=%20&color=%230E1116DC"></span>
-                    <span class="paper-overlay">Schippkus et al.<br>SRL, 2020</span>
-                </div>
-                <div class="paper-title">Characteristics of the ambient seismic field on a large-N seismic array in
-                    the Vienna basin
-                </div>
-            </div>
-        </a>
+      <!-- Schippkus et al. 2019 -->
+      <a
+        href="https://doi.org/10.17738/ajes.2019.0010"
+        target="_blank"
+        rel="noopener"
+      >
+        <div class="paper-card">
+          <div class="paper-image-wrapper">
+            <img
+              src="img/schippkus2019_preview.webp"
+              alt=""
+              class="paper-image"
+            />
+            <span class="like-overlay"
+              ><img
+                alt="Citations badge"
+                src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.openalex.org%2Fworks%2Fhttps%3A%2F%2Fdoi.org%2F10.17738%2Fajes.2019.0010&query=cited_by_count&style=flat&logo=bookmeter&logoColor=%23E1E1E6&label=%20&color=%230E1116DC"
+            /></span>
+            <span class="paper-overlay"
+              >Schippkus et al.<br />Aus. JES, 2019</span
+            >
+          </div>
+          <div class="paper-title">
+            The Alland earthquake sequence in Eastern Austria: Shedding light on
+            tectonic stress geometry in a key area of seismic hazard
+          </div>
+        </div>
+      </a>
 
-        <!-- Schippkus et al. 2020a -->
-        <a href="https://doi.org/10.1093/gji/ggz565" target="_blank" rel="noopener">
-            <div class="paper-card">
-                <div class="paper-image-wrapper">
-                    <img src="img/schippkus2020a_preview.webp" alt="" class="paper-image">
-                    <span class="like-overlay"><img alt="Citations badge"
-                            src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.openalex.org%2Fworks%2Fhttps%3A%2F%2Fdoi.org%2F10.1093%2Fgji%2Fggz565&query=cited_by_count&style=flat&logo=bookmeter&logoColor=%23E1E1E6&label=%20&color=%230E1116DC"></span>
-                    <span class="paper-overlay">Schippkus et al.<br>GJI, 2020</span>
-                </div>
-                <div class="paper-title">Azimuthal anisotropy in the wider Vienna basin region: a proxy for the
-                    present-day stress field and deformation
-                </div>
-            </div>
-        </a>
-
-        <!-- Schippkus et al. 2019 -->
-        <a href="https://doi.org/10.17738/ajes.2019.0010" target="_blank" rel="noopener">
-            <div class="paper-card">
-                <div class="paper-image-wrapper">
-                    <img src="img/schippkus2019_preview.webp" alt="" class="paper-image">
-                    <span class="like-overlay"><img alt="Citations badge"
-                            src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.openalex.org%2Fworks%2Fhttps%3A%2F%2Fdoi.org%2F10.17738%2Fajes.2019.0010&query=cited_by_count&style=flat&logo=bookmeter&logoColor=%23E1E1E6&label=%20&color=%230E1116DC"></span>
-                    <span class="paper-overlay">Schippkus et al.<br>Aus. JES, 2019</span>
-                </div>
-                <div class="paper-title">The Alland earthquake sequence in Eastern Austria: Shedding light on
-                    tectonic stress geometry in a key area of seismic hazard
-                </div>
-            </div>
-        </a>
-
-        <!-- Schippkus et al. 2018 -->
-        <a href="https://doi.org/10.1093/gji/ggy259" target="_blank" rel="noopener">
-            <div class="paper-card">
-                <div class="paper-image-wrapper">
-                    <img src="img/schippkus2018_preview.webp" alt="" class="paper-image">
-                    <span class="like-overlay"><img alt="Citations badge"
-                            src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.openalex.org%2Fworks%2Fhttps%3A%2F%2Fdoi.org%2F10.1093%2Fgji%2Fggy259&query=cited_by_count&style=flat&logo=bookmeter&logoColor=%23E1E1E6&label=%20&color=%230E1116DC"></span>
-                    <span class="paper-overlay">Schippkus et al.<br>GJI, 2018</span>
-                </div>
-                <div class="paper-title">Ambient noise tomography of the wider Vienna Basin region
-                </div>
-            </div>
-        </a>
-
-
+      <!-- Schippkus et al. 2018 -->
+      <a
+        href="https://doi.org/10.1093/gji/ggy259"
+        target="_blank"
+        rel="noopener"
+      >
+        <div class="paper-card">
+          <div class="paper-image-wrapper">
+            <img
+              src="img/schippkus2018_preview.webp"
+              alt=""
+              class="paper-image"
+            />
+            <span class="like-overlay"
+              ><img
+                alt="Citations badge"
+                src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.openalex.org%2Fworks%2Fhttps%3A%2F%2Fdoi.org%2F10.1093%2Fgji%2Fggy259&query=cited_by_count&style=flat&logo=bookmeter&logoColor=%23E1E1E6&label=%20&color=%230E1116DC"
+            /></span>
+            <span class="paper-overlay">Schippkus et al.<br />GJI, 2018</span>
+          </div>
+          <div class="paper-title">
+            Ambient noise tomography of the wider Vienna Basin region
+          </div>
+        </div>
+      </a>
     </div>
 
-    <h2>Open Science <a href="https://github.com/schipp" target="_blank" rel="noopener">
-            <img alt="GitHub stars"
-                src="https://img.shields.io/github/stars/schipp?style=flat&logo=riseup&logoColor=%23FFA90E&label=%20&color=%230E1116"></a>
-
+    <h2>
+      Open Science
+      <a href="https://github.com/schipp" target="_blank" rel="noopener">
+        <img
+          alt="GitHub stars"
+          src="https://img.shields.io/github/stars/schipp?style=flat&logo=riseup&logoColor=%23FFA90E&label=%20&color=%230E1116"
+      /></a>
     </h2>
 
     <div class="paper-grid">
+      <!-- Add new repositories here -->
 
-        <!-- Add new repositories here -->
+      <!-- Awesome Seismology -->
+      <a
+        href="https://github.com/schipp/awesome-seismology"
+        target="_blank"
+        rel="noopener"
+      >
+        <div class="paper-card">
+          <div class="paper-image-wrapper">
+            <img src="img/awesome.webp" alt="" class="paper-image" />
+            <span class="like-overlay"
+              ><img
+                alt="GitHub stars"
+                src="https://img.shields.io/github/stars/schipp/awesome-seismology?style=flat&logo=riseup&logoColor=%23FFA90E&label=%20&color=%230E1116DC"
+            /></span>
+          </div>
+          <div class="paper-title">
+            <div class="tag">NEW</div>
+            Awesome Seismology
+          </div>
+        </div>
+      </a>
 
-        <!-- Awesome Seismology -->
-        <a href="https://github.com/schipp/awesome-seismology" target="_blank" rel="noopener">
-            <div class="paper-card">
-                <div class="paper-image-wrapper">
-                    <img src="img/awesome.webp" alt="" class="paper-image">
-                    <span class="like-overlay"><img alt="GitHub stars"
-                            src="https://img.shields.io/github/stars/schipp/awesome-seismology?style=flat&logo=riseup&logoColor=%23FFA90E&label=%20&color=%230E1116DC"></span>
-                </div>
-                <div class="paper-title">
-                    <div class="tag">NEW</div> Awesome Seismology
-                </div>
-            </div>
+      <!-- Svennevig 2024 -->
+      <a
+        href="https://github.com/ROBelgium/VLPGreenland"
+        target="_blank"
+        rel="noopener"
+      >
+        <div class="paper-card">
+          <div class="paper-image-wrapper">
+            <img
+              src="img/svennevig2024_preview.webp"
+              alt=""
+              class="paper-image"
+            />
+            <span class="like-overlay"
+              ><img
+                alt="GitHub stars"
+                src="https://img.shields.io/github/stars/ROBelgium/VLPGreenland?style=flat&logo=riseup&logoColor=%23FFA90E&label=%20&color=%230E1116DC"
+            /></span>
+          </div>
+          <div class="paper-title">
+            Accompanying repository for Svennevig et al. 2024
+          </div>
+        </div>
+      </a>
 
-        </a>
+      <a
+        href="https://github.com/schipp/fast_beamforming"
+        target="_blank"
+        rel="noopener"
+      >
+        <div class="paper-card">
+          <div class="paper-image-wrapper">
+            <img src="img/fast_beamforming.webp" alt="" class="paper-image" />
+            <span class="like-overlay"
+              ><img
+                alt="GitHub stars"
+                src="https://img.shields.io/github/stars/schipp/fast_beamforming?style=flat&logo=riseup&logoColor=%23FFA90E&label=%20&color=%230E1116DC"
+            /></span>
+          </div>
+          <div class="paper-title">Fast beamforming in Python</div>
+        </div>
+      </a>
 
-        <!-- Svennevig 2024 -->
-        <a href="https://github.com/ROBelgium/VLPGreenland" target="_blank" rel="noopener">
-            <div class="paper-card">
-                <div class="paper-image-wrapper">
-                    <img src="img/svennevig2024_preview.webp" alt="" class="paper-image">
-                    <span class="like-overlay"><img alt="GitHub stars"
-                            src="https://img.shields.io/github/stars/ROBelgium/VLPGreenland?style=flat&logo=riseup&logoColor=%23FFA90E&label=%20&color=%230E1116DC"></span>
-                </div>
-                <div class="paper-title">Accompanying repository for Svennevig et al. 2024</div>
-            </div>
-        </a>
+      <a
+        href="https://github.com/schipp/repeating_direct_waves"
+        target="_blank"
+        rel="noopener"
+      >
+        <div class="paper-card">
+          <div class="paper-image-wrapper">
+            <img
+              src="img/schippkus2023_preview.webp"
+              alt=""
+              class="paper-image"
+            />
+            <span class="like-overlay"
+              ><img
+                alt="GitHub stars"
+                src="https://img.shields.io/github/stars/schipp/repeating_direct_waves?style=flat&logo=riseup&logoColor=%23FFA90E&label=%20&color=%230E1116DC"
+            /></span>
+          </div>
+          <div class="paper-title">
+            Accompanying repository for Schippkus et al. 2023
+          </div>
+        </div>
+      </a>
 
-        <a href="https://github.com/schipp/fast_beamforming" target="_blank" rel="noopener">
-            <div class="paper-card">
-                <div class="paper-image-wrapper">
-                    <img src="img/fast_beamforming.webp" alt="" class="paper-image">
-                    <span class="like-overlay"><img alt="GitHub stars"
-                            src="https://img.shields.io/github/stars/schipp/fast_beamforming?style=flat&logo=riseup&logoColor=%23FFA90E&label=%20&color=%230E1116DC"></span>
-                </div>
-                <div class="paper-title">
-                    Fast beamforming in Python
-                </div>
-            </div>
-        </a>
+      <a
+        href="https://github.com/schipp/matched_field_processing"
+        target="_blank"
+        rel="noopener"
+      >
+        <div class="paper-card">
+          <div class="paper-image-wrapper">
+            <img
+              src="img/schippkus2022a_preview.webp"
+              alt=""
+              class="paper-image"
+            />
+            <span class="like-overlay"
+              ><img
+                alt="GitHub stars"
+                src="https://img.shields.io/github/stars/schipp/matched_field_processing?style=flat&logo=riseup&logoColor=%23FFA90E&label=%20&color=%230E1116DC"
+            /></span>
+          </div>
+          <div class="paper-title">
+            Numerical Matched Field Processing as in Schippkus et al. 2022
+          </div>
+        </div>
+      </a>
 
-        <a href="https://github.com/schipp/repeating_direct_waves" target="_blank" rel="noopener">
-            <div class="paper-card">
-                <div class="paper-image-wrapper">
-                    <img src="img/schippkus2023_preview.webp" alt="" class="paper-image">
-                    <span class="like-overlay"><img alt="GitHub stars"
-                            src="https://img.shields.io/github/stars/schipp/repeating_direct_waves?style=flat&logo=riseup&logoColor=%23FFA90E&label=%20&color=%230E1116DC"></span>
-                </div>
-                <div class="paper-title">
-                    Accompanying repository for Schippkus et al. 2023
-                </div>
-            </div>
-        </a>
+      <a
+        href="https://github.com/schipp/eikonal_tomography"
+        target="_blank"
+        rel="noopener"
+      >
+        <div class="paper-card">
+          <div class="paper-image-wrapper">
+            <img src="img/eikonal_preview.webp" alt="" class="paper-image" />
+            <span class="like-overlay"
+              ><img
+                alt="GitHub stars"
+                src="https://img.shields.io/github/stars/schipp/eikonal_tomography?style=flat&logo=riseup&logoColor=%23FFA90E&label=%20&color=%230E1116DC"
+            /></span>
+          </div>
+          <div class="paper-title">
+            Eikonal Tomography synthetic demonstration
+          </div>
+        </div>
+      </a>
 
-        <a href="https://github.com/schipp/matched_field_processing" target="_blank" rel="noopener">
-            <div class="paper-card">
-                <div class="paper-image-wrapper">
-                    <img src="img/schippkus2022a_preview.webp" alt="" class="paper-image">
-                    <span class="like-overlay"><img alt="GitHub stars"
-                            src="https://img.shields.io/github/stars/schipp/matched_field_processing?style=flat&logo=riseup&logoColor=%23FFA90E&label=%20&color=%230E1116DC"></span>
-                </div>
-                <div class="paper-title">
-                    Numerical Matched Field Processing as in Schippkus et al. 2022
-                </div>
-            </div>
-        </a>
+      <a
+        href="https://github.com/schipp/azimuthal_anisotropy"
+        target="_blank"
+        rel="noopener"
+      >
+        <div class="paper-card">
+          <div class="paper-image-wrapper">
+            <img src="img/aniso_preview.webp" alt="" class="paper-image" />
+            <span class="like-overlay"
+              ><img
+                alt="GitHub stars"
+                src="https://img.shields.io/github/stars/schipp/azimuthal_anisotropy?style=flat&logo=riseup&logoColor=%23FFA90E&label=%20&color=%230E1116DC"
+            /></span>
+          </div>
+          <div class="paper-title">
+            Azimuthal anisotropy of surface waves as in Schippkus et al. 2020
+          </div>
+        </div>
+      </a>
 
-        <a href="https://github.com/schipp/eikonal_tomography" target="_blank" rel="noopener">
-            <div class="paper-card">
-                <div class="paper-image-wrapper">
-                    <img src="img/eikonal_preview.webp" alt="" class="paper-image">
-                    <span class="like-overlay"><img alt="GitHub stars"
-                            src="https://img.shields.io/github/stars/schipp/eikonal_tomography?style=flat&logo=riseup&logoColor=%23FFA90E&label=%20&color=%230E1116DC"></span>
-                </div>
-                <div class="paper-title">
-                    Eikonal Tomography synthetic demonstration
-                </div>
-            </div>
-        </a>
-
-        <a href="https://github.com/schipp/azimuthal_anisotropy" target="_blank" rel="noopener">
-            <div class="paper-card">
-                <div class="paper-image-wrapper">
-                    <img src="img/aniso_preview.webp" alt="" class="paper-image">
-                    <span class="like-overlay"><img alt="GitHub stars"
-                            src="https://img.shields.io/github/stars/schipp/azimuthal_anisotropy?style=flat&logo=riseup&logoColor=%23FFA90E&label=%20&color=%230E1116DC"></span>
-                </div>
-                <div class="paper-title">
-                    Azimuthal anisotropy of surface waves as in Schippkus et al. 2020
-                </div>
-            </div>
-        </a>
-
-        <a href="https://github.com/schipp/moment_tensor_inversion" target="_blank" rel="noopener">
-            <div class="paper-card">
-                <div class="paper-image-wrapper">
-                    <img src="img/mt_preview.webp" alt="" class="paper-image">
-                    <span class="like-overlay"><img alt="GitHub stars"
-                            src="https://img.shields.io/github/stars/schipp/moment_tensor_inversion?style=flat&logo=riseup&logoColor=%23FFA90E&label=%20&color=%230E1116DC"></span>
-                </div>
-                <div class="paper-title">
-                    Moment tensor inversion as in Schippkus et al. 2019
-                </div>
-            </div>
-        </a>
-
+      <a
+        href="https://github.com/schipp/moment_tensor_inversion"
+        target="_blank"
+        rel="noopener"
+      >
+        <div class="paper-card">
+          <div class="paper-image-wrapper">
+            <img src="img/mt_preview.webp" alt="" class="paper-image" />
+            <span class="like-overlay"
+              ><img
+                alt="GitHub stars"
+                src="https://img.shields.io/github/stars/schipp/moment_tensor_inversion?style=flat&logo=riseup&logoColor=%23FFA90E&label=%20&color=%230E1116DC"
+            /></span>
+          </div>
+          <div class="paper-title">
+            Moment tensor inversion as in Schippkus et al. 2019
+          </div>
+        </div>
+      </a>
     </div>
-
-</body>
-
+  </body>
 </html>
