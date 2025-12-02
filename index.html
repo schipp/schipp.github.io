@@ -136,6 +136,7 @@
         pointer-events: none;
         max-width: 80%;
         text-align: right;
+        z-index: 3;
       }
 
       .paper-title {
@@ -152,6 +153,25 @@
         display: inline-block;
         position: relative;
         animation: anim_color 4s ease-in-out infinite;
+      }
+
+      .centered-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 1.7em;
+        font-weight: bold;
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+        background: rgba(0, 0, 0, 0.2);
+        pointer-events: none;
+        border-radius: 20px;
+        z-index: 2;
       }
 
       @keyframes anim_color {
@@ -656,6 +676,7 @@
               class="paper-image"
               loading="lazy"
             />
+            <span class="paper-overlay">2015 – 2020</span>
           </div>
           <div class="paper-title">The AlpArray initiative</div>
         </div>
@@ -674,6 +695,59 @@
 
     <div class="paper-grid">
       <!-- Add new repositories here -->
+
+      <!-- C2 github -->
+      <a
+        href="https://github.com/schipp/higher_order_correlations_c2"
+        target="_blank"
+        rel="noopener"
+      >
+        <div class="paper-card">
+          <div class="paper-image-wrapper">
+            <img
+              src="img/schippkus2025_preview.webp"
+              alt=""
+              class="paper-image"
+              loading="lazy"
+            />
+            <span class="like-overlay"
+              ><img
+                alt="GitHub stars"
+                src="https://img.shields.io/github/stars/schipp/higher_order_correlations_c2?style=flat&logo=riseup&logoColor=%23FFA90E&label=%20&color=%230E1116DC"
+                loading="lazy"
+            /></span>
+            <span class="centered-overlay">Codes</span>
+          </div>
+          <div class="paper-title">
+            <div class="tag">NEW</div>
+            Accompanying repository for Schippkus et al. 2025
+          </div>
+        </div>
+      </a>
+
+      <!-- C2 data -->
+      <a
+        href="https://www.fdr.uni-hamburg.de/record/18152"
+        target="_blank"
+        rel="noopener"
+      >
+        <div class="paper-card">
+          <div class="paper-image-wrapper">
+            <img
+              src="img/schippkus2025_preview.webp"
+              alt=""
+              class="paper-image"
+              loading="lazy"
+            />
+            <span class="centered-overlay">Dataset</span>
+          </div>
+          <div class="paper-title">
+            <div class="tag">NEW</div>
+            Dataset: Large-N cross-correlation functions of ambient seismic
+            noise recorded in the Vienna basin, Austria.
+          </div>
+        </div>
+      </a>
 
       <!-- Awesome Seismology -->
       <a
@@ -698,7 +772,8 @@
           </div>
           <div class="paper-title">
             <div class="tag">NEW</div>
-            Awesome Seismology
+            Awesome Seismology: A curated list of awesome seismology tools and
+            resources
           </div>
         </div>
       </a>
