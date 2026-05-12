@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -20,12 +20,15 @@
       }
 
       h1 {
-        text-align: center;
-        margin-bottom: 1rem;
+        text-align: left;
+        max-width: 440px;
+        margin: 0.5rem auto 1.5rem auto;
       }
 
       p {
-        text-align: center;
+        text-align: left;
+        max-width: 600px;
+        margin: 0.5rem auto 1.5rem auto;
       }
 
       h2 {
@@ -239,9 +242,15 @@
       <a href="#projects">Projects</a>
       <a href="#open-science">Codes</a>
     </nav>
-    <h1>Sven Schippkus</h1>
-    <p>Seismologist at the University of Hamburg</p>
-    <p>contact: sven.schippkus(at)uni-hamburg.de</p>
+<h1>Sven Schippkus</h1>
+<div style="display: flex; align-items: center; gap: 2rem; max-width: 800px; margin: 0 auto;">
+  <img src="img/sven.webp" alt="Profile picture of Sven Schippkus" style="width: 150px; height: 150px; border-radius: 50%; flex-shrink: 0;" />
+  <div>
+    <p>Experienced seismologist with a deep passion for advancing computational methods and exploiting large datasets. My work spans seismic interferometry, source detection and localization, and machine learning, always with an eye toward both fundamental research questions and practical applications. Open science is a core value for me. I believe knowledge should be accessible and reproducible, and I actively contribute to these efforts. Currently at the University of Hamburg.</p>
+    contact: sven(at)schippkus.eu
+  </div>
+</div>
+    </div>
 
     <h2 id="research-papers">
       <a
@@ -267,7 +276,7 @@
           </div>
           <div class="paper-title">
             <div class="tag">SOON</div>
-            Surface-wave holograms
+            Large-N Observations of Surface Wave Holograms
           </div>
         </div>
       </a>
@@ -666,7 +675,24 @@
     <h2 id="projects">Research Projects</h2>
 
     <div class="paper-grid">
-      <!-- Add new projects here -->
+      <!-- RING -->
+      <a href="https://www.ringlaser.de" target="_blank" rel="noopener">
+        <div class="paper-card">
+          <div class="paper-image-wrapper">
+            <img
+              src="img/ring.webp"
+              alt=""
+              class="paper-image"
+              loading="lazy"
+            />
+            <span class="paper-overlay">2026 – 2034</span>
+          </div>
+          <div class="paper-title">
+            RING: Rotations in Physics, Geodesy and Geophysics
+          </div>
+        </div>
+      </a>
+      <!-- RUBADO -->
       <a
         href="https://geothermics.agw.kit.edu/english/976.php"
         target="_blank"
