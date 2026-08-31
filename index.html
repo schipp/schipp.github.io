@@ -2,21 +2,101 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Sven Schippkus</title>
-    <link rel="icon" href="data:," />
+    <title>Sven Schippkus — Seismologist</title>
+    <meta
+      name="description"
+      content="Personal website of Sven Schippkus, seismologist at the University of Hamburg. Seismic interferometry, source detection and localization, machine learning, and open science."
+    />
+    <meta name="author" content="Sven Schippkus" />
+    <meta
+      name="theme-color"
+      content="#ffffff"
+    />
+    <link rel="canonical" href="https://www.schippkus.eu/" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230e1116'/><text x='32' y='45' font-family='Verdana, sans-serif' font-size='38' font-weight='bold' text-anchor='middle' fill='%23ffa90e'>S</text></svg>"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.schippkus.eu/" />
+    <meta property="og:title" content="Sven Schippkus — Seismologist" />
+    <meta
+      property="og:description"
+      content="Seismologist at the University of Hamburg. Seismic interferometry, source detection and localization, machine learning, and open science."
+    />
+    <meta property="og:image" content="https://www.schippkus.eu/img/sven.webp" />
+    <script>
+      (function () {
+        var stored;
+        try {
+          stored = localStorage.getItem("theme");
+        } catch (e) {}
+        var theme = stored === "dark" ? "dark" : "light";
+        document.documentElement.dataset.theme = theme;
+        var meta = document.querySelector('meta[name="theme-color"]');
+        if (meta) meta.content = theme === "dark" ? "#0e1116" : "#ffffff";
+      })();
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Sven Schippkus",
+        "jobTitle": "Seismologist",
+        "description": "Seismologist working on seismic interferometry, source detection and localization, and machine learning.",
+        "url": "https://www.schippkus.eu/",
+        "image": "https://www.schippkus.eu/img/sven.webp",
+        "email": "mailto:sven@schippkus.eu",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Universität Hamburg"
+        },
+        "sameAs": [
+          "https://github.com/schipp",
+          "https://scholar.google.com/citations?user=tAKcJ5sAAAAJ"
+        ]
+      }
+    </script>
     <script
       data-goatcounter="https://schipp.goatcounter.com/count"
       async
       src="//gc.zgo.at/count.js"
     ></script>
     <style>
+      :root {
+        color-scheme: light;
+        --bg: #ffffff;
+        --fg: #1c2026;
+        --border: #e4e6eb;
+        --accent: #ffa90e;
+        --shadow: rgba(0, 0, 0, 0.08);
+        --hover-shadow: rgba(0, 0, 0, 0.15);
+        --overlay-bg: rgba(255, 255, 255, 0.88);
+        --card-hover: #f2f3f6;
+        --tag-a: #bd1f01;
+        --tag-b: #d97c00;
+      }
+
+      :root[data-theme="dark"] {
+        color-scheme: dark;
+        --bg: #0e1116;
+        --fg: #e1e1e6;
+        --border: #20242c;
+        --shadow: rgba(0, 0, 0, 0.1);
+        --hover-shadow: rgba(0, 0, 0, 0.4);
+        --overlay-bg: rgba(34, 40, 49, 0.86);
+        --card-hover: #171b22;
+        --tag-a: #bd1f01;
+        --tag-b: #edd3ad;
+      }
+
       body {
         margin: 0;
         padding: 2rem;
         font-family: verdana;
-        background: #0e1116;
-        color: #e1e1e6;
+        background: var(--bg);
+        color: var(--fg);
       }
 
       h1 {
@@ -36,6 +116,26 @@
         margin-bottom: 1rem;
       }
 
+      .profile {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .profile-pic {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        flex-shrink: 0;
+      }
+
+      .contact {
+        margin: 0;
+        max-width: 600px;
+      }
+
       /* no URL styling */
       a {
         color: inherit;
@@ -44,26 +144,31 @@
         font-style: inherit;
         background: none;
         border: none;
-        outline: none;
         padding: 0;
         margin: 0;
+      }
+
+      a:focus-visible {
+        outline: 2px solid var(--accent);
+        outline-offset: 2px;
+        border-radius: 4px;
       }
 
       .titlebar {
         position: sticky; /* Or: fixed */
         top: 0;
         z-index: 100;
-        background: #0e1116;
-        color: #e1e1e6;
+        background: var(--bg);
+        color: var(--fg);
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 2rem;
         padding: 0.7em 1.5em;
-        border-bottom: 1.5px solid #20242c;
+        border-bottom: 1.5px solid var(--border);
         font-size: 1.1em;
         letter-spacing: 0.03em;
-        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 2px 12px var(--shadow);
       }
 
       .titlebar a {
@@ -74,7 +179,46 @@
       }
       .titlebar a:hover,
       .titlebar a:focus {
-        color: #ffa90e;
+        color: var(--accent);
+      }
+
+      .theme-toggle {
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 2rem;
+        height: 2rem;
+        font-family: inherit;
+        font-size: 1rem;
+        line-height: 1;
+        color: inherit;
+        background: none;
+        border: 1px solid var(--border);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: color 0.2s, border-color 0.2s;
+      }
+
+      .theme-toggle:hover,
+      .theme-toggle:focus-visible {
+        color: var(--accent);
+        border-color: var(--accent);
+      }
+
+      .theme-toggle .icon-sun {
+        display: none;
+      }
+
+      :root[data-theme="dark"] .theme-toggle .icon-sun {
+        display: inline;
+      }
+
+      :root[data-theme="dark"] .theme-toggle .icon-moon {
+        display: none;
       }
 
       [id="research-papers"],
@@ -95,12 +239,17 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        background: #0e1116;
+        background: var(--bg);
+        border-radius: 14px;
+        padding: 0.5em;
         overflow: hidden;
+        transition: background-color 0.2s, box-shadow 0.2s;
       }
 
-      .paper-card:hover {
-        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.13);
+      a:hover .paper-card,
+      a:focus-visible .paper-card {
+        background: var(--card-hover);
+        box-shadow: 0 4px 18px var(--hover-shadow);
       }
 
       .paper-image-wrapper {
@@ -108,7 +257,7 @@
         width: 100%;
         aspect-ratio: 1/1;
         height: auto;
-        border: 2px solid #0e1116;
+        border: 2px solid transparent;
         border-radius: 20px;
         /* flex-shrink: 0; */
       }
@@ -125,8 +274,8 @@
         position: absolute;
         bottom: 8px;
         right: 8px;
-        background: rgba(34, 40, 49, 0.86);
-        color: #e1e1e6;
+        background: var(--overlay-bg);
+        color: var(--fg);
         font-size: 0.75em;
         padding: 4px 10px;
         border-radius: 8px;
@@ -157,10 +306,17 @@
       }
 
       .tag {
-        background-color: #0e1116;
+        background-color: var(--bg);
         display: inline-block;
         position: relative;
         animation: anim_color 4s ease-in-out infinite;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .tag {
+          animation: none;
+          color: var(--tag-b);
+        }
       }
 
       .centered-overlay {
@@ -185,11 +341,11 @@
       @keyframes anim_color {
         0%,
         100% {
-          color: #bd1f01;
+          color: var(--tag-a);
         }
 
         50% {
-          color: #edd3ad;
+          color: var(--tag-b);
         }
       }
 
@@ -198,6 +354,42 @@
         .paper-grid {
           max-width: 650px;
           grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 600px) {
+        h1 {
+          text-align: center;
+        }
+
+        .titlebar {
+          justify-content: space-between;
+          gap: 0.75rem;
+          font-size: 1em;
+          padding: 0.7em 1em;
+        }
+
+        .theme-toggle {
+          position: static;
+          transform: none;
+          width: 1.8rem;
+          height: 1.8rem;
+          font-size: 0.9rem;
+        }
+
+        .profile {
+          flex-direction: column;
+          text-align: center;
+          gap: 1.25rem;
+        }
+
+        .profile p {
+          text-align: center;
+        }
+
+        .profile-pic {
+          width: 120px;
+          height: 120px;
         }
       }
 
@@ -240,17 +432,31 @@
     <nav class="titlebar" aria-label="Main site navigation">
       <a href="#research-papers">Papers</a>
       <a href="#projects">Projects</a>
-      <a href="#open-science">Codes</a>
+      <a href="#open-science">Open Science</a>
+      <button
+        id="theme-toggle"
+        class="theme-toggle"
+        type="button"
+        aria-label="Toggle dark mode"
+      >
+        <span class="icon-moon" aria-hidden="true">☾</span>
+        <span class="icon-sun" aria-hidden="true">☀</span>
+      </button>
     </nav>
 <h1>Sven Schippkus</h1>
-<div style="display: flex; align-items: center; gap: 2rem; max-width: 800px; margin: 0 auto;">
-  <img src="img/sven.webp" alt="Profile picture of Sven Schippkus" style="width: 150px; height: 150px; border-radius: 50%; flex-shrink: 0;" />
+<div class="profile">
+  <img
+    src="img/sven.webp"
+    alt="Profile picture of Sven Schippkus"
+    width="150"
+    height="150"
+    class="profile-pic"
+  />
   <div>
     <p>Seismologist with a deep passion for advancing computational methods and exploiting large datasets. My work spans seismic interferometry, source detection and localization, and machine learning, always with an eye toward both fundamental research questions and practical applications. Open science is a core value for me. I believe knowledge should be accessible and reproducible, and I actively contribute to these efforts. Currently at University of Hamburg.</p>
-    contact: sven(at)schippkus.eu
+    <p class="contact">contact: sven(at)schippkus.eu</p>
   </div>
 </div>
-    </div>
 
     <h2 id="research-papers">
       <a
@@ -264,11 +470,11 @@
       <!-- Add new papers here -->
 
       <!-- Schippkus et al. 2026? -->
-      <a href="#">
+      <div>
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/schippkus2025b_preview.webp"
+              src="img/schippkus2025b_preview.webp" width="250" height="250"
               alt=""
               class="paper-image"
             />
@@ -279,7 +485,7 @@
             Large-N Observations of Surface Wave Holograms
           </div>
         </div>
-      </a>
+      </div>
 
       <!-- Rautenberg & Schippkus -->
       <a
@@ -289,7 +495,7 @@
       >
         <div class="paper-card">
           <div class="paper-image-wrapper">
-            <img src="img/rautenberg2026.webp" alt="" class="paper-image" />
+            <img src="img/rautenberg2026.webp" width="250" height="250" alt="" class="paper-image" />
             <span class="like-overlay"
               ><img
                 alt="Citations badge"
@@ -311,7 +517,7 @@
       <a href="https://doi.org/10.1093/gji/ggag070" target="_blank" rel="noopener">
         <div class="paper-card">
           <div class="paper-image-wrapper">
-            <img src="img/klinge2025_preview.webp" alt="" class="paper-image" />
+            <img src="img/klinge2025_preview.webp" width="250" height="250" alt="" class="paper-image" />
             <span class="like-overlay"
               ><img
                 alt="Citations badge"
@@ -333,7 +539,7 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/schippkus2025_preview.webp"
+              src="img/schippkus2025_preview.webp" width="250" height="250"
               alt=""
               class="paper-image"
             />
@@ -362,7 +568,7 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/safarkhani2025_preview.webp"
+              src="img/safarkhani2025_preview.webp" width="250" height="250"
               alt=""
               class="paper-image"
             />
@@ -389,8 +595,8 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/klinge2024_preview.webp"
-              alt="Paper 2 Figure"
+              src="img/klinge2024_preview.webp" width="250" height="250"
+              alt=""
               class="paper-image"
             />
             <span class="like-overlay"
@@ -416,7 +622,7 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/svennevig2024_preview.webp"
+              src="img/svennevig2024_preview.webp" width="250" height="250"
               alt=""
               class="paper-image"
             />
@@ -445,7 +651,7 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/maass2024_preview.webp"
+              src="img/maass2024_preview.webp" width="250" height="250"
               alt=""
               class="paper-image"
               loading="lazy"
@@ -474,7 +680,7 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/schippkus2023_preview.webp"
+              src="img/schippkus2023_preview.webp" width="249" height="250"
               alt=""
               class="paper-image"
               loading="lazy"
@@ -505,7 +711,7 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/schippkus2022b_preview.webp"
+              src="img/schippkus2022b_preview.webp" width="250" height="250"
               alt=""
               class="paper-image"
               loading="lazy"
@@ -535,7 +741,7 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/schippkus2022a_preview.webp"
+              src="img/schippkus2022a_preview.webp" width="250" height="246"
               alt=""
               class="paper-image"
               loading="lazy"
@@ -564,7 +770,7 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/schippkus2020b_preview.webp"
+              src="img/schippkus2020b_preview.webp" width="250" height="250"
               alt=""
               class="paper-image"
               loading="lazy"
@@ -593,7 +799,7 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/schippkus2020a_preview.webp"
+              src="img/schippkus2020a_preview.webp" width="250" height="250"
               alt=""
               class="paper-image"
               loading="lazy"
@@ -622,7 +828,7 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/schippkus2019_preview.webp"
+              src="img/schippkus2019_preview.webp" width="250" height="250"
               alt=""
               class="paper-image"
               loading="lazy"
@@ -653,7 +859,7 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/schippkus2018_preview.webp"
+              src="img/schippkus2018_preview.webp" width="250" height="250"
               alt=""
               class="paper-image"
               loading="lazy"
@@ -681,7 +887,7 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/ring.webp"
+              src="img/ring.webp" width="250" height="250"
               alt=""
               class="paper-image"
               loading="lazy"
@@ -702,7 +908,7 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/rubado.webp"
+              src="img/rubado.webp" width="250" height="250"
               alt=""
               class="paper-image"
               loading="lazy"
@@ -719,7 +925,7 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/spin.webp"
+              src="img/spin.webp" width="250" height="250"
               alt=""
               class="paper-image"
               loading="lazy"
@@ -735,7 +941,7 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/alparray.webp"
+              src="img/alparray.webp" width="250" height="250"
               alt=""
               class="paper-image"
               loading="lazy"
@@ -769,7 +975,7 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/rautenberg2026.webp"
+              src="img/rautenberg2026.webp" width="250" height="250"
               alt=""
               class="paper-image"
               loading="lazy"
@@ -797,7 +1003,7 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/schippkus2025_preview.webp"
+              src="img/schippkus2025_preview.webp" width="250" height="250"
               alt=""
               class="paper-image"
               loading="lazy"
@@ -826,7 +1032,7 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/schippkus2025_preview.webp"
+              src="img/schippkus2025_preview.webp" width="250" height="250"
               alt=""
               class="paper-image"
               loading="lazy"
@@ -850,7 +1056,7 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/awesome.webp"
+              src="img/awesome.webp" width="250" height="250"
               alt=""
               class="paper-image"
               loading="lazy"
@@ -878,7 +1084,7 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/svennevig2024_preview.webp"
+              src="img/svennevig2024_preview.webp" width="250" height="250"
               alt=""
               class="paper-image"
               loading="lazy"
@@ -904,7 +1110,7 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/fast_beamforming.webp"
+              src="img/fast_beamforming.webp" width="248" height="248"
               alt=""
               class="paper-image"
               loading="lazy"
@@ -928,7 +1134,7 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/schippkus2023_preview.webp"
+              src="img/schippkus2023_preview.webp" width="249" height="250"
               alt=""
               class="paper-image"
               loading="lazy"
@@ -954,7 +1160,7 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/schippkus2022a_preview.webp"
+              src="img/schippkus2022a_preview.webp" width="250" height="246"
               alt=""
               class="paper-image"
               loading="lazy"
@@ -980,7 +1186,7 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/eikonal_preview.webp"
+              src="img/eikonal_preview.webp" width="250" height="250"
               alt=""
               class="paper-image"
               loading="lazy"
@@ -1006,7 +1212,7 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/aniso_preview.webp"
+              src="img/aniso_preview.webp" width="250" height="247"
               alt=""
               class="paper-image"
               loading="lazy"
@@ -1032,7 +1238,7 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/mt_preview.webp"
+              src="img/mt_preview.webp" width="250" height="246"
               alt=""
               class="paper-image"
               loading="lazy"
@@ -1050,5 +1256,23 @@
         </div>
       </a>
     </div>
+
+    <script>
+      (function () {
+        var toggle = document.getElementById("theme-toggle");
+        var meta = document.querySelector('meta[name="theme-color"]');
+        toggle.addEventListener("click", function () {
+          var next =
+            document.documentElement.dataset.theme === "dark"
+              ? "light"
+              : "dark";
+          document.documentElement.dataset.theme = next;
+          try {
+            localStorage.setItem("theme", next);
+          } catch (e) {}
+          if (meta) meta.content = next === "dark" ? "#0e1116" : "#ffffff";
+        });
+      })();
+    </script>
   </body>
 </html>
