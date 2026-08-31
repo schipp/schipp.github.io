@@ -296,6 +296,27 @@
         z-index: 3;
       }
 
+      .count {
+        display: inline-block;
+        padding: 2px 9px;
+        border-radius: 8px;
+        background: var(--overlay-bg);
+        color: var(--fg);
+        font-size: 0.78em;
+        line-height: 1.4;
+        box-shadow: 0 1px 4px var(--shadow);
+      }
+
+      .count[data-kind="stars"]::before {
+        content: "★ ";
+        color: var(--accent);
+      }
+
+      .count[data-kind="cited"]::before {
+        content: "Cited ";
+        color: var(--accent);
+      }
+
       .paper-title {
         margin: 0.25em 0 0.75em 0;
         font-weight: 500;
@@ -497,10 +518,7 @@
           <div class="paper-image-wrapper">
             <img src="img/rautenberg2026.webp" width="250" height="250" alt="" class="paper-image" />
             <span class="like-overlay"
-              ><img
-                alt="Citations badge"
-                src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.openalex.org%2Fworks%2Fhttps%3A%2F%2Fdoi.org%2F10.48550%2FarXiv.2601.00641&query=cited_by_count&style=flat&logo=bookmeter&logoColor=%23E1E1E6&label=%20&color=%230E1116DC"
-            /></span>
+              ><span class="count" data-kind="cited">0</span></span>
             <span class="paper-overlay"
               >Rautenberg & Schippkus<br />ArXiv, 2026</span
             >
@@ -519,10 +537,7 @@
           <div class="paper-image-wrapper">
             <img src="img/klinge2025_preview.webp" width="250" height="250" alt="" class="paper-image" />
             <span class="like-overlay"
-              ><img
-                alt="Citations badge"
-                src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.openalex.org%2Fworks%2Fhttps%3A%2F%2Fdoi.org%2F10.1093%2Fgji%2Fggag070&query=cited_by_count&style=flat&logo=bookmeter&logoColor=%23E1E1E6&label=%20&color=%230E1116DC"
-            /></span>
+              ><span class="count" data-kind="cited">0</span></span>
             <span class="paper-overlay"
               >Klinge et al.<br />GJI, 2026</span
             >
@@ -544,10 +559,7 @@
               class="paper-image"
             />
             <span class="like-overlay"
-              ><img
-                alt="Citations badge"
-                src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.openalex.org%2Fworks%2Fhttps%3A%2F%2Fdoi.org%2F10.31223%2FX5PN1J&query=cited_by_count&style=flat&logo=bookmeter&logoColor=%23E1E1E6&label=%20&color=%230E1116DC"
-            /></span>
+              ><span class="count" data-kind="cited">0</span></span>
             <span class="paper-overlay"
               >Schippkus et al.<br />EarthArXiv, 2025</span
             >
@@ -573,10 +585,7 @@
               class="paper-image"
             />
             <span class="like-overlay"
-              ><img
-                alt="Citations badge"
-                src="https://img.shields.io/badge/dynamic/json?url=https://api.openalex.org/works/https://doi.org/10.1093/gji/ggaf358&query=cited_by_count&style=flat&logo=bookmeter&logoColor=%23E1E1E6&label=%20&color=%230E1116DC"
-            /></span>
+              ><span class="count" data-kind="cited">1</span></span>
             <span class="paper-overlay">Safarkhani et al.<br />GJI, 2025</span>
           </div>
           <div class="paper-title">
@@ -600,10 +609,7 @@
               class="paper-image"
             />
             <span class="like-overlay"
-              ><img
-                alt="Citations badge"
-                src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.openalex.org%2Fworks%2Fhttps%3A%2F%2Fdoi.org%2F10.1093%2Fgji%2Fggaf004&query=cited_by_count&style=flat&logo=bookmeter&logoColor=%23E1E1E6&label=%20&color=%230E1116DC"
-            /></span>
+              ><span class="count" data-kind="cited">2</span></span>
             <span class="paper-overlay">Klinge et al.<br />GJI, 2025</span>
           </div>
           <div class="paper-title">
@@ -627,10 +633,7 @@
               class="paper-image"
             />
             <span class="like-overlay"
-              ><img
-                alt="Citations badge"
-                src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.openalex.org%2Fworks%2Fhttps%3A%2F%2Fdoi.org%2F10.1126%2Fscience.adm9247&query=cited_by_count&style=flat&logo=bookmeter&logoColor=%23E1E1E6&label=%20&color=%230E1116DC"
-            /></span>
+              ><span class="count" data-kind="cited">67</span></span>
             <span class="paper-overlay"
               >Svennevig et al.<br />Science, 2024</span
             >
@@ -657,11 +660,7 @@
               loading="lazy"
             />
             <span class="like-overlay"
-              ><img
-                alt="Citations badge"
-                src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.openalex.org%2Fworks%2Fhttps%3A%2F%2Fdoi.org%2F10.1029%2F2023JB028320&query=cited_by_count&style=flat&logo=bookmeter&logoColor=%23E1E1E6&label=%20&color=%230E1116DC"
-                loading="lazy"
-            /></span>
+              ><span class="count" data-kind="cited">7</span></span>
             <span class="paper-overlay">Maass et al.<br />JGR SE, 2024</span>
           </div>
           <div class="paper-title">
@@ -686,11 +685,7 @@
               loading="lazy"
             />
             <span class="like-overlay"
-              ><img
-                alt="Citations badge"
-                src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.openalex.org%2Fworks%2Fhttps%3A%2F%2Fdoi.org%2F10.26443%2Fseismica.v2i2.499&query=cited_by_count&style=flat&logo=bookmeter&logoColor=%23E1E1E6&label=%20&color=%230E1116DC"
-                loading="lazy"
-            /></span>
+              ><span class="count" data-kind="cited">3</span></span>
             <span class="paper-overlay"
               >Schippkus et al.<br />Seismica, 2023</span
             >
@@ -717,11 +712,7 @@
               loading="lazy"
             />
             <span class="like-overlay"
-              ><img
-                alt="Citations badge"
-                src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.openalex.org%2Fworks%2Fhttps%3A%2F%2Fdoi.org%2F10.26443%2Fseismica.v1i1.195&query=cited_by_count&style=flat&logo=bookmeter&logoColor=%23E1E1E6&label=%20&color=%230E1116DC"
-                loading="lazy"
-            /></span>
+              ><span class="count" data-kind="cited">10</span></span>
             <span class="paper-overlay"
               >Schippkus et al.<br />Seismica, 2022</span
             >
@@ -747,11 +738,7 @@
               loading="lazy"
             />
             <span class="like-overlay"
-              ><img
-                alt="Citations badge"
-                src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.openalex.org%2Fworks%2Fhttps%3A%2F%2Fdoi.org%2F10.1093%2Fgji%2Fggac240&query=cited_by_count&style=flat&logo=bookmeter&logoColor=%23E1E1E6&label=%20&color=%230E1116DC"
-                loading="lazy"
-            /></span>
+              ><span class="count" data-kind="cited">12</span></span>
             <span class="paper-overlay">Schippkus et al.<br />GJI, 2022</span>
           </div>
           <div class="paper-title">
@@ -776,11 +763,7 @@
               loading="lazy"
             />
             <span class="like-overlay"
-              ><img
-                alt="Citations badge"
-                src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.openalex.org%2Fworks%2Fhttps%3A%2F%2Fdoi.org%2F10.1785%2F0220200153&query=cited_by_count&style=flat&logo=bookmeter&logoColor=%23E1E1E6&label=%20&color=%230E1116DC"
-                loading="lazy"
-            /></span>
+              ><span class="count" data-kind="cited">39</span></span>
             <span class="paper-overlay">Schippkus et al.<br />SRL, 2020</span>
           </div>
           <div class="paper-title">
@@ -805,11 +788,7 @@
               loading="lazy"
             />
             <span class="like-overlay"
-              ><img
-                alt="Citations badge"
-                src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.openalex.org%2Fworks%2Fhttps%3A%2F%2Fdoi.org%2F10.1093%2Fgji%2Fggz565&query=cited_by_count&style=flat&logo=bookmeter&logoColor=%23E1E1E6&label=%20&color=%230E1116DC"
-                loading="lazy"
-            /></span>
+              ><span class="count" data-kind="cited">12</span></span>
             <span class="paper-overlay">Schippkus et al.<br />GJI, 2020</span>
           </div>
           <div class="paper-title">
@@ -834,11 +813,7 @@
               loading="lazy"
             />
             <span class="like-overlay"
-              ><img
-                alt="Citations badge"
-                src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.openalex.org%2Fworks%2Fhttps%3A%2F%2Fdoi.org%2F10.17738%2Fajes.2019.0010&query=cited_by_count&style=flat&logo=bookmeter&logoColor=%23E1E1E6&label=%20&color=%230E1116DC"
-                loading="lazy"
-            /></span>
+              ><span class="count" data-kind="cited">3</span></span>
             <span class="paper-overlay"
               >Schippkus et al.<br />Aus. JES, 2019</span
             >
@@ -865,11 +840,7 @@
               loading="lazy"
             />
             <span class="like-overlay"
-              ><img
-                alt="Citations badge"
-                src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.openalex.org%2Fworks%2Fhttps%3A%2F%2Fdoi.org%2F10.1093%2Fgji%2Fggy259&query=cited_by_count&style=flat&logo=bookmeter&logoColor=%23E1E1E6&label=%20&color=%230E1116DC"
-                loading="lazy"
-            /></span>
+              ><span class="count" data-kind="cited">41</span></span>
             <span class="paper-overlay">Schippkus et al.<br />GJI, 2018</span>
           </div>
           <div class="paper-title">
@@ -956,11 +927,7 @@
     <h2 id="open-science">
       <a href="https://github.com/schipp" target="_blank" rel="noopener">
         Open Science
-        <img
-          alt="GitHub stars"
-          src="https://img.shields.io/github/stars/schipp?style=flat&logo=riseup&logoColor=%23FFA90E&label=%20&color=%230E1116"
-          loading="lazy"
-      /></a>
+        <span class="count" data-kind="stars">141</span></a>
     </h2>
 
     <div class="paper-grid">
@@ -981,11 +948,7 @@
               loading="lazy"
             />
             <span class="like-overlay"
-              ><img
-                alt="GitHub stars"
-                src="https://img.shields.io/github/stars/schipp/hallucination_guarantees?style=flat&logo=riseup&logoColor=%23FFA90E&label=%20&color=%230E1116DC"
-                loading="lazy"
-            /></span>
+              ><span class="count" data-kind="stars">0</span></span>
           </div>
           <div class="paper-title">
             <div class="tag">NEW</div>
@@ -1009,11 +972,7 @@
               loading="lazy"
             />
             <span class="like-overlay"
-              ><img
-                alt="GitHub stars"
-                src="https://img.shields.io/github/stars/schipp/higher_order_correlations_c2?style=flat&logo=riseup&logoColor=%23FFA90E&label=%20&color=%230E1116DC"
-                loading="lazy"
-            /></span>
+              ><span class="count" data-kind="stars">0</span></span>
             <span class="centered-overlay">Codes</span>
           </div>
           <div class="paper-title">
@@ -1062,11 +1021,7 @@
               loading="lazy"
             />
             <span class="like-overlay"
-              ><img
-                alt="GitHub stars"
-                src="https://img.shields.io/github/stars/schipp/awesome-seismology?style=flat&logo=riseup&logoColor=%23FFA90E&label=%20&color=%230E1116DC"
-                loading="lazy"
-            /></span>
+              ><span class="count" data-kind="stars">34</span></span>
           </div>
           <div class="paper-title">
             Awesome Seismology: A curated list of awesome seismology tools and
@@ -1090,11 +1045,7 @@
               loading="lazy"
             />
             <span class="like-overlay"
-              ><img
-                alt="GitHub stars"
-                src="https://img.shields.io/github/stars/ROBelgium/VLPGreenland?style=flat&logo=riseup&logoColor=%23FFA90E&label=%20&color=%230E1116DC"
-                loading="lazy"
-            /></span>
+              ><span class="count" data-kind="stars">4</span></span>
           </div>
           <div class="paper-title">
             Accompanying repository for Svennevig et al. 2024
@@ -1116,11 +1067,7 @@
               loading="lazy"
             />
             <span class="like-overlay"
-              ><img
-                alt="GitHub stars"
-                src="https://img.shields.io/github/stars/schipp/fast_beamforming?style=flat&logo=riseup&logoColor=%23FFA90E&label=%20&color=%230E1116DC"
-                loading="lazy"
-            /></span>
+              ><span class="count" data-kind="stars">61</span></span>
           </div>
           <div class="paper-title">Fast beamforming in Python</div>
         </div>
@@ -1140,11 +1087,7 @@
               loading="lazy"
             />
             <span class="like-overlay"
-              ><img
-                alt="GitHub stars"
-                src="https://img.shields.io/github/stars/schipp/repeating_direct_waves?style=flat&logo=riseup&logoColor=%23FFA90E&label=%20&color=%230E1116DC"
-                loading="lazy"
-            /></span>
+              ><span class="count" data-kind="stars">2</span></span>
           </div>
           <div class="paper-title">
             Accompanying repository for Schippkus et al. 2023
@@ -1166,11 +1109,7 @@
               loading="lazy"
             />
             <span class="like-overlay"
-              ><img
-                alt="GitHub stars"
-                src="https://img.shields.io/github/stars/schipp/matched_field_processing?style=flat&logo=riseup&logoColor=%23FFA90E&label=%20&color=%230E1116DC"
-                loading="lazy"
-            /></span>
+              ><span class="count" data-kind="stars">9</span></span>
           </div>
           <div class="paper-title">
             Numerical Matched Field Processing as in Schippkus et al. 2022
@@ -1192,11 +1131,7 @@
               loading="lazy"
             />
             <span class="like-overlay"
-              ><img
-                alt="GitHub stars"
-                src="https://img.shields.io/github/stars/schipp/eikonal_tomography?style=flat&logo=riseup&logoColor=%23FFA90E&label=%20&color=%230E1116DC"
-                loading="lazy"
-            /></span>
+              ><span class="count" data-kind="stars">9</span></span>
           </div>
           <div class="paper-title">
             Eikonal Tomography synthetic demonstration
@@ -1218,11 +1153,7 @@
               loading="lazy"
             />
             <span class="like-overlay"
-              ><img
-                alt="GitHub stars"
-                src="https://img.shields.io/github/stars/schipp/azimuthal_anisotropy?style=flat&logo=riseup&logoColor=%23FFA90E&label=%20&color=%230E1116DC"
-                loading="lazy"
-            /></span>
+              ><span class="count" data-kind="stars">9</span></span>
           </div>
           <div class="paper-title">
             Azimuthal anisotropy of surface waves as in Schippkus et al. 2020
@@ -1244,11 +1175,7 @@
               loading="lazy"
             />
             <span class="like-overlay"
-              ><img
-                alt="GitHub stars"
-                src="https://img.shields.io/github/stars/schipp/moment_tensor_inversion?style=flat&logo=riseup&logoColor=%23FFA90E&label=%20&color=%230E1116DC"
-                loading="lazy"
-            /></span>
+              ><span class="count" data-kind="stars">9</span></span>
           </div>
           <div class="paper-title">
             Moment tensor inversion as in Schippkus et al. 2019
