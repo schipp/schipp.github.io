@@ -21,7 +21,7 @@ HTML_PATH = os.path.join(ROOT, "index.html")
 MAILTO = "sven@schippkus.eu"
 
 BLOCK_RE = re.compile(
-    r'<a\s[^>]*?href="(https://(?:doi\.org|github\.com)/[^"]+)"[^>]*>(.*?)</a>',
+    r'<a\s[^>]*?href="(https://(?:doi\.org|github\.com)/[^"]+)"[^>]*>(.*?)</a\s*>',
     re.S,
 )
 IMG_RE = r'<img[^>]*alt="{alt}"[^>]*>'
