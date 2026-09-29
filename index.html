@@ -8,10 +8,7 @@
       content="Personal website of Sven Schippkus, seismologist at the University of Hamburg. Seismic interferometry, source detection and localization, machine learning, and open science."
     />
     <meta name="author" content="Sven Schippkus" />
-    <meta
-      name="theme-color"
-      content="#ffffff"
-    />
+    <meta name="theme-color" content="#ffffff" />
     <link rel="canonical" href="https://www.schippkus.eu/" />
     <link
       rel="icon"
@@ -25,7 +22,10 @@
       property="og:description"
       content="Seismologist at the University of Hamburg. Seismic interferometry, source detection and localization, machine learning, and open science."
     />
-    <meta property="og:image" content="https://www.schippkus.eu/img/sven.webp" />
+    <meta
+      property="og:image"
+      content="https://www.schippkus.eu/img/sven.webp"
+    />
     <script>
       (function () {
         var stored;
@@ -200,7 +200,9 @@
         border: 1px solid var(--border);
         border-radius: 50%;
         cursor: pointer;
-        transition: color 0.2s, border-color 0.2s;
+        transition:
+          color 0.2s,
+          border-color 0.2s;
       }
 
       .theme-toggle:hover,
@@ -243,7 +245,9 @@
         border-radius: 14px;
         padding: 0.5em;
         overflow: hidden;
-        transition: background-color 0.2s, box-shadow 0.2s;
+        transition:
+          background-color 0.2s,
+          box-shadow 0.2s;
       }
 
       a:hover .paper-card,
@@ -308,7 +312,7 @@
       }
 
       .count[data-kind="stars"]::before {
-        content: "🟌 ";
+        content: "★ ";
         color: var(--accent);
       }
 
@@ -464,20 +468,28 @@
         <span class="icon-sun" aria-hidden="true">☀</span>
       </button>
     </nav>
-<h1>Sven Schippkus</h1>
-<div class="profile">
-  <img
-    src="img/sven.webp"
-    alt="Profile picture of Sven Schippkus"
-    width="150"
-    height="150"
-    class="profile-pic"
-  />
-  <div>
-    <p>Seismologist with a deep passion for advancing computational methods and exploiting large datasets. My work spans seismic interferometry, source detection and localization, and machine learning, always with an eye toward both fundamental research questions and practical applications. Open science is a core value for me. I believe knowledge should be accessible and reproducible, and I actively contribute to these efforts. Currently at University of Hamburg.</p>
-    <p class="contact">contact: sven(at)schippkus.eu</p>
-  </div>
-</div>
+    <h1>Sven Schippkus</h1>
+    <div class="profile">
+      <img
+        src="img/sven.webp"
+        alt="Profile picture of Sven Schippkus"
+        width="150"
+        height="150"
+        class="profile-pic"
+      />
+      <div>
+        <p>
+          Seismologist with a deep passion for advancing computational methods
+          and exploiting large datasets. My work spans seismic interferometry,
+          source detection and localization, and machine learning, always with
+          an eye toward both fundamental research questions and practical
+          applications. Open science is a core value for me. I believe knowledge
+          should be accessible and reproducible, and I actively contribute to
+          these efforts. Currently at University of Hamburg.
+        </p>
+        <p class="contact">contact: sven(at)schippkus.eu</p>
+      </div>
+    </div>
 
     <h2 id="research-papers">
       <a
@@ -490,23 +502,34 @@
     <div class="paper-grid">
       <!-- Add new papers here -->
 
-      <!-- Schippkus et al. 2026? -->
-      <div>
+      <!-- Schippkus et al. 2026 -->
+      <a
+        href="https://doi.org/10.1029/2025JB033615"
+        target="_blank"
+        rel="noopener"
+      >
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/schippkus2025b_preview.webp" width="250" height="250"
+              src="img/schippkus2025_preview.webp"
+              width="250"
+              height="250"
               alt=""
               class="paper-image"
             />
-            <span class="paper-overlay">Schippkus et al.<br />in prep.</span>
+            <span class="like-overlay"
+              ><span class="count" data-kind="cited">0</span></span
+            >
+            <span class="paper-overlay"
+              >Schippkus et al.<br />JGR: SE, 2026</span
+            >
           </div>
           <div class="paper-title">
-            <div class="tag">SOON</div>
-            Large-N Observations of Surface Wave Holograms
+            <div class="tag">NEW</div>
+            Source effects in higher-order ambient seismic field correlations
           </div>
         </div>
-      </div>
+      </a>
 
       <!-- Rautenberg & Schippkus -->
       <a
@@ -516,15 +539,21 @@
       >
         <div class="paper-card">
           <div class="paper-image-wrapper">
-            <img src="img/rautenberg2026.webp" width="250" height="250" alt="" class="paper-image" />
+            <img
+              src="img/rautenberg2026.webp"
+              width="250"
+              height="250"
+              alt=""
+              class="paper-image"
+            />
             <span class="like-overlay"
-              ><span class="count" data-kind="cited">0</span></span>
+              ><span class="count" data-kind="cited">0</span></span
+            >
             <span class="paper-overlay"
               >Rautenberg & Schippkus<br />ArXiv, 2026</span
             >
           </div>
           <div class="paper-title">
-            <div class="tag">NEW</div>
             Probabilistic Guarantees for Reducing Contextual Hallucinations in
             LLMs
           </div>
@@ -532,41 +561,27 @@
       </a>
 
       <!-- Klinge et al. 2026 -->
-      <a href="https://doi.org/10.1093/gji/ggag070" target="_blank" rel="noopener">
-        <div class="paper-card">
-          <div class="paper-image-wrapper">
-            <img src="img/klinge2025_preview.webp" width="250" height="250" alt="" class="paper-image" />
-            <span class="like-overlay"
-              ><span class="count" data-kind="cited">0</span></span>
-            <span class="paper-overlay"
-              >Klinge et al.<br />GJI, 2026</span
-            >
-          </div>
-          <div class="paper-title">
-            <div class="tag">NEW</div>
-            Unlocking the potential of single stations to replace seismic arrays
-          </div>
-        </div>
-      </a>
-
-      <!-- Schippkus et al. 2025a -->
-      <a href="https://doi.org/10.31223/X5PN1J" target="_blank" rel="noopener">
+      <a
+        href="https://doi.org/10.1093/gji/ggag070"
+        target="_blank"
+        rel="noopener"
+      >
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/schippkus2025_preview.webp" width="250" height="250"
+              src="img/klinge2025_preview.webp"
+              width="250"
+              height="250"
               alt=""
               class="paper-image"
             />
             <span class="like-overlay"
-              ><span class="count" data-kind="cited">0</span></span>
-            <span class="paper-overlay"
-              >Schippkus et al.<br />EarthArXiv, 2025</span
+              ><span class="count" data-kind="cited">0</span></span
             >
+            <span class="paper-overlay">Klinge et al.<br />GJI, 2026</span>
           </div>
           <div class="paper-title">
-            <div class="tag">NEW</div>
-            Source effects in higher-order ambient seismic field correlations
+            Unlocking the potential of single stations to replace seismic arrays
           </div>
         </div>
       </a>
@@ -580,12 +595,15 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/safarkhani2025_preview.webp" width="250" height="250"
+              src="img/safarkhani2025_preview.webp"
+              width="250"
+              height="250"
               alt=""
               class="paper-image"
             />
             <span class="like-overlay"
-              ><span class="count" data-kind="cited">2</span></span>
+              ><span class="count" data-kind="cited">2</span></span
+            >
             <span class="paper-overlay">Safarkhani et al.<br />GJI, 2025</span>
           </div>
           <div class="paper-title">
@@ -604,12 +622,15 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/klinge2024_preview.webp" width="250" height="250"
+              src="img/klinge2024_preview.webp"
+              width="250"
+              height="250"
               alt=""
               class="paper-image"
             />
             <span class="like-overlay"
-              ><span class="count" data-kind="cited">2</span></span>
+              ><span class="count" data-kind="cited">2</span></span
+            >
             <span class="paper-overlay">Klinge et al.<br />GJI, 2025</span>
           </div>
           <div class="paper-title">
@@ -628,12 +649,15 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/svennevig2024_preview.webp" width="250" height="250"
+              src="img/svennevig2024_preview.webp"
+              width="250"
+              height="250"
               alt=""
               class="paper-image"
             />
             <span class="like-overlay"
-              ><span class="count" data-kind="cited">71</span></span>
+              ><span class="count" data-kind="cited">71</span></span
+            >
             <span class="paper-overlay"
               >Svennevig et al.<br />Science, 2024</span
             >
@@ -654,14 +678,17 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/maass2024_preview.webp" width="250" height="250"
+              src="img/maass2024_preview.webp"
+              width="250"
+              height="250"
               alt=""
               class="paper-image"
               loading="lazy"
             />
             <span class="like-overlay"
-              ><span class="count" data-kind="cited">7</span></span>
-            <span class="paper-overlay">Maass et al.<br />JGR SE, 2024</span>
+              ><span class="count" data-kind="cited">7</span></span
+            >
+            <span class="paper-overlay">Maass et al.<br />JGR: SE, 2024</span>
           </div>
           <div class="paper-title">
             Stacking of distributed dynamic strain reveals link between seismic
@@ -679,13 +706,16 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/schippkus2023_preview.webp" width="249" height="250"
+              src="img/schippkus2023_preview.webp"
+              width="249"
+              height="250"
               alt=""
               class="paper-image"
               loading="lazy"
             />
             <span class="like-overlay"
-              ><span class="count" data-kind="cited">4</span></span>
+              ><span class="count" data-kind="cited">4</span></span
+            >
             <span class="paper-overlay"
               >Schippkus et al.<br />Seismica, 2023</span
             >
@@ -706,13 +736,16 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/schippkus2022b_preview.webp" width="250" height="250"
+              src="img/schippkus2022b_preview.webp"
+              width="250"
+              height="250"
               alt=""
               class="paper-image"
               loading="lazy"
             />
             <span class="like-overlay"
-              ><span class="count" data-kind="cited">12</span></span>
+              ><span class="count" data-kind="cited">12</span></span
+            >
             <span class="paper-overlay"
               >Schippkus et al.<br />Seismica, 2022</span
             >
@@ -732,13 +765,16 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/schippkus2022a_preview.webp" width="250" height="246"
+              src="img/schippkus2022a_preview.webp"
+              width="250"
+              height="246"
               alt=""
               class="paper-image"
               loading="lazy"
             />
             <span class="like-overlay"
-              ><span class="count" data-kind="cited">13</span></span>
+              ><span class="count" data-kind="cited">13</span></span
+            >
             <span class="paper-overlay">Schippkus et al.<br />GJI, 2022</span>
           </div>
           <div class="paper-title">
@@ -757,13 +793,16 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/schippkus2020b_preview.webp" width="250" height="250"
+              src="img/schippkus2020b_preview.webp"
+              width="250"
+              height="250"
               alt=""
               class="paper-image"
               loading="lazy"
             />
             <span class="like-overlay"
-              ><span class="count" data-kind="cited">39</span></span>
+              ><span class="count" data-kind="cited">39</span></span
+            >
             <span class="paper-overlay">Schippkus et al.<br />SRL, 2020</span>
           </div>
           <div class="paper-title">
@@ -782,13 +821,16 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/schippkus2020a_preview.webp" width="250" height="250"
+              src="img/schippkus2020a_preview.webp"
+              width="250"
+              height="250"
               alt=""
               class="paper-image"
               loading="lazy"
             />
             <span class="like-overlay"
-              ><span class="count" data-kind="cited">12</span></span>
+              ><span class="count" data-kind="cited">12</span></span
+            >
             <span class="paper-overlay">Schippkus et al.<br />GJI, 2020</span>
           </div>
           <div class="paper-title">
@@ -807,13 +849,16 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/schippkus2019_preview.webp" width="250" height="250"
+              src="img/schippkus2019_preview.webp"
+              width="250"
+              height="250"
               alt=""
               class="paper-image"
               loading="lazy"
             />
             <span class="like-overlay"
-              ><span class="count" data-kind="cited">3</span></span>
+              ><span class="count" data-kind="cited">3</span></span
+            >
             <span class="paper-overlay"
               >Schippkus et al.<br />Aus. JES, 2019</span
             >
@@ -834,13 +879,16 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/schippkus2018_preview.webp" width="250" height="250"
+              src="img/schippkus2018_preview.webp"
+              width="250"
+              height="250"
               alt=""
               class="paper-image"
               loading="lazy"
             />
             <span class="like-overlay"
-              ><span class="count" data-kind="cited">42</span></span>
+              ><span class="count" data-kind="cited">42</span></span
+            >
             <span class="paper-overlay">Schippkus et al.<br />GJI, 2018</span>
           </div>
           <div class="paper-title">
@@ -858,7 +906,9 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/ring.webp" width="250" height="250"
+              src="img/ring.webp"
+              width="250"
+              height="250"
               alt=""
               class="paper-image"
               loading="lazy"
@@ -879,7 +929,9 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/rubado.webp" width="250" height="250"
+              src="img/rubado.webp"
+              width="250"
+              height="250"
               alt=""
               class="paper-image"
               loading="lazy"
@@ -896,7 +948,9 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/spin.webp" width="250" height="250"
+              src="img/spin.webp"
+              width="250"
+              height="250"
               alt=""
               class="paper-image"
               loading="lazy"
@@ -912,7 +966,9 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/alparray.webp" width="250" height="250"
+              src="img/alparray.webp"
+              width="250"
+              height="250"
               alt=""
               class="paper-image"
               loading="lazy"
@@ -927,7 +983,8 @@
     <h2 id="open-science">
       <a href="https://github.com/schipp" target="_blank" rel="noopener">
         Open Science
-        <span class="count" data-kind="stars">143</span></a>
+        <span class="count" data-kind="stars">143</span></a
+      >
     </h2>
 
     <div class="paper-grid">
@@ -942,13 +999,16 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/rautenberg2026.webp" width="250" height="250"
+              src="img/rautenberg2026.webp"
+              width="250"
+              height="250"
               alt=""
               class="paper-image"
               loading="lazy"
             />
             <span class="like-overlay"
-              ><span class="count" data-kind="stars">0</span></span>
+              ><span class="count" data-kind="stars">0</span></span
+            >
           </div>
           <div class="paper-title">
             <div class="tag">NEW</div>
@@ -966,13 +1026,16 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/schippkus2025_preview.webp" width="250" height="250"
+              src="img/schippkus2025_preview.webp"
+              width="250"
+              height="250"
               alt=""
               class="paper-image"
               loading="lazy"
             />
             <span class="like-overlay"
-              ><span class="count" data-kind="stars">0</span></span>
+              ><span class="count" data-kind="stars">0</span></span
+            >
             <span class="centered-overlay">Codes</span>
           </div>
           <div class="paper-title">
@@ -991,7 +1054,9 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/schippkus2025_preview.webp" width="250" height="250"
+              src="img/schippkus2025_preview.webp"
+              width="250"
+              height="250"
               alt=""
               class="paper-image"
               loading="lazy"
@@ -1015,13 +1080,16 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/awesome.webp" width="250" height="250"
+              src="img/awesome.webp"
+              width="250"
+              height="250"
               alt=""
               class="paper-image"
               loading="lazy"
             />
             <span class="like-overlay"
-              ><span class="count" data-kind="stars">35</span></span>
+              ><span class="count" data-kind="stars">35</span></span
+            >
           </div>
           <div class="paper-title">
             Awesome Seismology: A curated list of awesome seismology tools and
@@ -1039,13 +1107,16 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/svennevig2024_preview.webp" width="250" height="250"
+              src="img/svennevig2024_preview.webp"
+              width="250"
+              height="250"
               alt=""
               class="paper-image"
               loading="lazy"
             />
             <span class="like-overlay"
-              ><span class="count" data-kind="stars">4</span></span>
+              ><span class="count" data-kind="stars">4</span></span
+            >
           </div>
           <div class="paper-title">
             Accompanying repository for Svennevig et al. 2024
@@ -1061,13 +1132,16 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/fast_beamforming.webp" width="248" height="248"
+              src="img/fast_beamforming.webp"
+              width="248"
+              height="248"
               alt=""
               class="paper-image"
               loading="lazy"
             />
             <span class="like-overlay"
-              ><span class="count" data-kind="stars">62</span></span>
+              ><span class="count" data-kind="stars">62</span></span
+            >
           </div>
           <div class="paper-title">Fast beamforming in Python</div>
         </div>
@@ -1081,13 +1155,16 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/schippkus2023_preview.webp" width="249" height="250"
+              src="img/schippkus2023_preview.webp"
+              width="249"
+              height="250"
               alt=""
               class="paper-image"
               loading="lazy"
             />
             <span class="like-overlay"
-              ><span class="count" data-kind="stars">2</span></span>
+              ><span class="count" data-kind="stars">2</span></span
+            >
           </div>
           <div class="paper-title">
             Accompanying repository for Schippkus et al. 2023
@@ -1103,13 +1180,16 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/schippkus2022a_preview.webp" width="250" height="246"
+              src="img/schippkus2022a_preview.webp"
+              width="250"
+              height="246"
               alt=""
               class="paper-image"
               loading="lazy"
             />
             <span class="like-overlay"
-              ><span class="count" data-kind="stars">9</span></span>
+              ><span class="count" data-kind="stars">9</span></span
+            >
           </div>
           <div class="paper-title">
             Numerical Matched Field Processing as in Schippkus et al. 2022
@@ -1125,13 +1205,16 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/eikonal_preview.webp" width="250" height="250"
+              src="img/eikonal_preview.webp"
+              width="250"
+              height="250"
               alt=""
               class="paper-image"
               loading="lazy"
             />
             <span class="like-overlay"
-              ><span class="count" data-kind="stars">9</span></span>
+              ><span class="count" data-kind="stars">9</span></span
+            >
           </div>
           <div class="paper-title">
             Eikonal Tomography synthetic demonstration
@@ -1147,13 +1230,16 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/aniso_preview.webp" width="250" height="247"
+              src="img/aniso_preview.webp"
+              width="250"
+              height="247"
               alt=""
               class="paper-image"
               loading="lazy"
             />
             <span class="like-overlay"
-              ><span class="count" data-kind="stars">9</span></span>
+              ><span class="count" data-kind="stars">9</span></span
+            >
           </div>
           <div class="paper-title">
             Azimuthal anisotropy of surface waves as in Schippkus et al. 2020
@@ -1169,13 +1255,16 @@
         <div class="paper-card">
           <div class="paper-image-wrapper">
             <img
-              src="img/mt_preview.webp" width="250" height="246"
+              src="img/mt_preview.webp"
+              width="250"
+              height="246"
               alt=""
               class="paper-image"
               loading="lazy"
             />
             <span class="like-overlay"
-              ><span class="count" data-kind="stars">9</span></span>
+              ><span class="count" data-kind="stars">9</span></span
+            >
           </div>
           <div class="paper-title">
             Moment tensor inversion as in Schippkus et al. 2019
