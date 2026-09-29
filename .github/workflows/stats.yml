@@ -1,6 +1,9 @@
 name: Refresh counts
 
 on:
+  push:
+    paths:
+      - 'index.html'
   schedule:
     - cron: '23 5 * * 1'
   workflow_dispatch:
@@ -13,6 +16,8 @@ concurrency:
 
 jobs:
   refresh:
+    # skip pushes made by this workflow itself (bot commits of refreshed counts)
+    if: github.event_name != 'push' || github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
